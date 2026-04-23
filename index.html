@@ -4,573 +4,941 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Instalación técnica y motorización avanzada de persianas Matter 1.5 en Madrid. Persianas Online — Engineering Boutique. Desde 279€ por ventana.">
-    <title>Persianas Online | Motorización Inteligente Madrid | Desde 279€</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <style>
-        :root { --gold: #C9A96E; --dark: #080808; --gray: #1a1a1a; }
-        body { background-color: var(--dark); color: white; font-family: 'Jost', sans-serif; overflow-x: hidden; }
-        h1, h2, h3 { font-family: 'Cormorant Garamond', serif; }
+    <meta name="description" content="Instalación técnica y motorización avanzada de persianas Matter 1.5 en Madrid. Engineering Boutique. Desde 279€ por ventana. Garantía hasta 5 años.">
+    <meta name="robots" content="index, follow">
+    <title>Persianas Online | Motorización Matter 1.5 Madrid | Desde 279€</title>
 
 ```
+<!-- Open Graph -->
+<meta property="og:title" content="Persianas Online — Motorización Inteligente Madrid">
+<meta property="og:description" content="Instalación técnica de persianas motorizadas Matter 1.5 en Madrid. Apple Home, Google, Alexa. Desde 279€.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://persianasonline.es">
+<meta property="og:locale" content="es_ES">
+
+<!-- Schema.org LocalBusiness -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Persianas Online S.L.",
+  "description": "Instalación técnica y motorización avanzada de persianas Matter 1.5 en Madrid",
+  "url": "https://persianasonline.es",
+  "telephone": "+34911674242",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Avenida Juan Carlos I, 38",
+    "addressLocality": "Getafe",
+    "postalCode": "28905",
+    "addressRegion": "Madrid",
+    "addressCountry": "ES"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 40.308, "longitude": -3.732 },
+  "openingHours": "Mo-Sa 08:00-20:00",
+  "priceRange": "€€",
+  "areaServed": ["Getafe","Leganés","Fuenlabrada","Parla","Madrid"],
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5", "reviewCount": "47" }
+}
+</script>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+    :root {
+        --gold: #C9A96E;
+        --gold-dim: rgba(201,169,110,0.5);
+        --dark: #080808;
+        --dark-warm: #0f0d0a;
+        --dark-mid: #111111;
+        --gray: #1e1c19;
+        --text: #e4dfd5;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+        background: var(--dark);
+        color: var(--text);
+        font-family: 'Jost', sans-serif;
+        font-size: 16px;
+        line-height: 1.75;
+        overflow-x: hidden;
+    }
+    h1,h2,h3,h4 { font-family: 'Cormorant Garamond', serif; }
+
     .text-gold { color: var(--gold); }
-    .bg-gold { background-color: var(--gold); }
-    .border-gold { border-color: var(--gold); }
-    .text-dark { color: var(--dark); }
-    .bg-dark { background-color: var(--dark); }
-    .bg-gray-custom { background-color: var(--gray); }
+    .bg-gold    { background: var(--gold); }
+    .gold-line  { width: 56px; height: 2px; background: var(--gold); margin: 0 auto 1.75rem; }
+    .gold-line-left { width: 56px; height: 2px; background: var(--gold); margin: 0 0 1.75rem; }
+    .section-pad { padding: 96px 0; }
+    .bg-warm { background: var(--dark-warm); }
+    .bg-mid  { background: var(--dark-mid); }
 
-    .hero-gradient { background: linear-gradient(to bottom, rgba(8,8,8,0.3), rgba(8,8,8,1)); }
-    .btn-gold { border: 1px solid var(--gold); color: var(--gold); padding: 12px 30px; transition: all 0.3s ease; text-transform: uppercase; letter-spacing: 2px; font-size: 0.75rem; font-weight: 600; display: inline-block; text-align: center; }
-    .btn-gold:hover { background: var(--gold); color: var(--dark); }
-
-    .section-padding { padding: 120px 0; }
-    .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity .7s ease, transform .7s ease; }
     .reveal.active { opacity: 1; transform: translateY(0); }
 
-    .type-btn.active, .tier-btn.active { border-color: var(--gold); color: var(--gold); }
+    .btn-gold {
+        border: 1px solid var(--gold); color: var(--gold);
+        padding: 14px 36px; font-size: .7rem; font-weight: 600;
+        letter-spacing: 3px; text-transform: uppercase;
+        display: inline-block; text-align: center;
+        transition: background .3s, color .3s;
+    }
+    .btn-gold:hover { background: var(--gold); color: var(--dark); }
 
-    .tier-card-featured { border-color: var(--gold); position: relative; }
+    /* Hero video */
+    .hero-video {
+        position: absolute; inset: 0;
+        width: 100%; height: 100%;
+        object-fit: cover;
+        opacity: .45;
+    }
+
+    /* Ken Burns fallback for poster */
+    @keyframes kenburns {
+        0%   { transform: scale(1.05) translate(0,0); }
+        50%  { transform: scale(1.12) translate(-1%,-0.5%); }
+        100% { transform: scale(1.05) translate(0,0); }
+    }
+
+    .counter-val { font-family: 'Cormorant Garamond', serif; font-size: 4rem; font-weight: 700; color: var(--gold); line-height: 1; }
+
+    .tier-card-featured { border-color: var(--gold) !important; position: relative; }
     .tier-card-featured::before {
         content: 'RECOMENDADO';
-        position: absolute;
-        top: -12px;
-        left: 50%;
-        transform: translateX(-50%);
-        background: var(--gold);
-        color: var(--dark);
-        padding: 4px 16px;
-        font-size: 10px;
-        letter-spacing: 3px;
-        font-weight: 700;
+        position: absolute; top: -13px; left: 50%; transform: translateX(-50%);
+        background: var(--gold); color: var(--dark);
+        padding: 4px 20px; font-size: 9px; letter-spacing: 3px; font-weight: 700; white-space: nowrap;
     }
+    .type-btn.active, .tier-btn.active { border-color: var(--gold) !important; color: var(--gold); }
 
-    /* Protocol badges */
     .proto-badge {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        border: 1px solid rgba(201,169,110,0.25);
-        padding: 8px 16px;
-        font-size: 10px;
-        letter-spacing: 3px;
-        text-transform: uppercase;
-        color: rgba(255,255,255,0.5);
-        transition: all 0.3s ease;
-        white-space: nowrap;
+        display: inline-flex; align-items: center; gap: 7px;
+        border: 1px solid rgba(201,169,110,0.3); padding: 7px 13px;
+        font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+        color: rgba(228,223,213,0.6); transition: border-color .3s, color .3s;
     }
     .proto-badge:hover { border-color: var(--gold); color: var(--gold); }
-    .proto-badge .dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
+    .proto-badge .dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
 
-    /* Platform compatibility logos */
     .platform-pill {
-        display: flex;
-        align-items: center;
-        gap: 6px;
-        padding: 6px 14px;
-        background: rgba(255,255,255,0.04);
-        border: 1px solid rgba(255,255,255,0.08);
-        font-size: 9px;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        color: rgba(255,255,255,0.45);
+        display: inline-flex; align-items: center; gap: 7px;
+        padding: 8px 14px; font-size: 10px; letter-spacing: 2px;
+        text-transform: uppercase; color: rgba(228,223,213,0.6);
+        background: rgba(201,169,110,0.06); border: 1px solid rgba(201,169,110,0.15);
     }
+
+    .step-num {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 5rem; font-weight: 700; line-height: 1;
+        color: rgba(201,169,110,0.18); position: absolute; top: -10px; left: -8px;
+    }
+
+    .faq-item { border-bottom: 1px solid rgba(201,169,110,0.15); }
+    .faq-btn { width: 100%; text-align: left; padding: 1.25rem 0; display: flex; justify-content: space-between; align-items: center; background: transparent; border: none; color: var(--text); font-family: 'Jost', sans-serif; font-size: 1rem; cursor: pointer; }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height .4s ease; }
+    .faq-answer.open { max-height: 200px; }
+    .faq-icon { color: var(--gold); font-size: 1.4rem; line-height: 1; flex-shrink: 0; transition: transform .3s; }
+    .faq-icon.open { transform: rotate(45deg); }
+
+    .wa-float {
+        position: fixed; bottom: 28px; right: 24px; z-index: 90;
+        background: #25D366; color: white;
+        width: 58px; height: 58px; border-radius: 50%;
+        display: flex; align-items: center; justify-content: center;
+        box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+        transition: transform .3s, box-shadow .3s;
+    }
+    .wa-float:hover { transform: scale(1.1); box-shadow: 0 6px 28px rgba(37,211,102,0.55); }
+
+    .mob-bar {
+        display: none; position: fixed; bottom: 0; left: 0; right: 0; z-index: 80;
+        background: var(--dark-warm);
+        border-top: 1px solid rgba(201,169,110,0.3);
+        padding: 12px 16px;
+        display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+    }
+    @media(min-width:768px){ .mob-bar { display: none !important; } }
 
     #cookie-banner {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: var(--gray);
-        border-top: 1px solid var(--gold);
-        padding: 20px;
-        z-index: 100;
-        display: none;
+        position: fixed; bottom: 0; left: 0; right: 0;
+        background: #1a1814; border-top: 1px solid var(--gold);
+        padding: 18px; z-index: 200; display: none;
     }
     #cookie-banner.show { display: block; }
+
+    .gold-divider { width: 100%; height: 1px; background: linear-gradient(to right, transparent, var(--gold), transparent); }
+
+    /* Review cards */
+    .review-card {
+        background: var(--gray);
+        border: 1px solid rgba(201,169,110,0.15);
+        padding: 28px;
+        transition: border-color .3s;
+    }
+    .review-card:hover { border-color: rgba(201,169,110,0.4); }
+    .review-avatar {
+        width: 40px; height: 40px; border-radius: 50%;
+        display: flex; align-items: center; justify-content: center;
+        font-family: 'Jost', sans-serif; font-weight: 700;
+        font-size: 14px; flex-shrink: 0;
+    }
+
+    /* Founder section */
+    .founder-img-wrap {
+        position: relative;
+    }
+    .founder-img-wrap::after {
+        content: '';
+        position: absolute;
+        bottom: -16px; right: -16px;
+        width: 55%; height: 55%;
+        border: 1px solid rgba(201,169,110,0.25);
+        z-index: -1;
+    }
+
+    /* Portfolio — color photos, keep hover zoom */
+    .portfolio-img {
+        width: 100%; height: 100%;
+        object-fit: cover;
+        transition: transform .7s ease;
+    }
+    .portfolio-img-wrap:hover .portfolio-img { transform: scale(1.06); }
 </style>
 ```
 
 </head>
 <body>
 
-<!-- Header -->
+<!-- ═══ FLOATING WHATSAPP ═══ -->
 
-<nav class="fixed top-0 w-full p-8 flex justify-between items-center z-50 bg-black/50 backdrop-blur-md border-b border-white/5">
-    <div class="flex flex-col">
-        <a href="/" class="text-2xl font-bold tracking-[0.4em] text-gold uppercase">Persianas Online</a>
-        <span class="text-[9px] tracking-[0.6em] uppercase opacity-40">Engineering Boutique · Madrid</span>
-    </div>
-    <div class="hidden md:flex flex-col items-end">
-        <a href="tel:+34911674242" class="text-sm font-bold tracking-widest">911 67 42 42</a>
-        <a href="https://wa.me/34624420102?text=Hola,%20quiero%20presupuesto%20para%20motorizar%20mis%20persianas." class="text-[10px] text-green-500 font-bold uppercase tracking-widest">WhatsApp: 624 420 102</a>
+<a href="https://wa.me/34624420102?text=Hola,%20quiero%20presupuesto%20para%20motorizar%20mis%20persianas." class="wa-float" aria-label="WhatsApp">
+    <svg width="28" height="28" fill="white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<!-- ═══ HEADER ═══ -->
+
+<nav class="fixed top-0 w-full z-50 px-6 py-5 flex justify-between items-center" style="background:rgba(8,8,8,0.75); backdrop-filter:blur(14px); border-bottom:1px solid rgba(201,169,110,0.12)">
+    <a href="/" class="flex items-center gap-3">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+            <rect x="1" y="1" width="34" height="34" stroke="#C9A96E" stroke-width="1.2"/>
+            <text x="18" y="24" font-family="Cormorant Garamond,serif" font-size="18" font-weight="700" fill="#C9A96E" text-anchor="middle">PO</text>
+        </svg>
+        <div class="flex flex-col">
+            <span class="text-base font-bold tracking-[0.35em] text-gold uppercase leading-none">Persianas Online</span>
+            <span class="text-[8px] tracking-[0.5em] uppercase leading-none mt-1" style="color:rgba(201,169,110,0.4)">Engineering Boutique · Madrid</span>
+        </div>
+    </a>
+    <div class="hidden md:flex flex-col items-end gap-1">
+        <a href="tel:+34911674242" class="text-base font-semibold tracking-widest hover:text-gold transition">911 67 42 42</a>
+        <a href="https://wa.me/34624420102?text=Hola,%20quiero%20presupuesto." class="text-[10px] font-bold uppercase tracking-widest" style="color:#4ade80">WhatsApp: 624 420 102</a>
     </div>
 </nav>
 
-<!-- Hero -->
+<!-- ═══ HERO — VIDEO BACKGROUND ═══ -->
 
 <section class="relative h-screen flex items-center justify-center overflow-hidden">
-    <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80')] bg-cover bg-center scale-105 opacity-40"></div>
-    <div class="absolute inset-0 hero-gradient"></div>
-    <div class="container mx-auto px-6 relative z-10 text-center pt-24">
-        <h1 class="text-6xl md:text-9xl mb-8 leading-none font-light italic">La alegría del precio pasa.<br><span class="text-gold not-italic font-bold">La calidad permanece.</span></h1>
-        <p class="text-lg md:text-xl max-w-2xl mx-auto opacity-70 mb-12 font-light tracking-wide uppercase">Instalación técnica y motorización avanzada Matter 1.5 en Madrid.</p>
-        <div class="flex flex-col md:flex-row justify-center gap-6">
-            <a href="#tarifas" class="bg-gold text-dark px-10 py-4 text-xs font-bold uppercase tracking-widest transition hover:bg-white">Ver Tarifas</a>
-            <a href="#calculadora" class="btn-gold">Calcular Presupuesto</a>
+
+```
+<!-- VIDEO background -->
+<video class="hero-video" autoplay muted loop playsinline
+       poster="assets/proyectos/obra_1.jpg">
+    <source src="assets/video/hero.mp4" type="video/mp4">
+</video>
+
+<!-- Gradient overlay -->
+<div class="absolute inset-0" style="background:linear-gradient(to bottom,rgba(8,8,8,0.2) 0%,rgba(8,8,8,0.65) 55%,rgba(8,8,8,1) 100%)"></div>
+
+<div class="container mx-auto px-6 relative z-10 text-center pt-20">
+    <p class="text-[10px] uppercase tracking-[0.7em] mb-6" style="color:rgba(201,169,110,0.65)">Madrid · Getafe · Leganés · Fuenlabrada · Parla</p>
+    <h1 class="text-5xl md:text-8xl lg:text-[7rem] mb-6 leading-[1.05] font-light italic">
+        La alegría del precio pasa.<br>
+        <span class="text-gold not-italic font-bold">La calidad permanece.</span>
+    </h1>
+    <div class="gold-line"></div>
+    <p class="text-base md:text-lg max-w-xl mx-auto mb-12 font-light tracking-wide uppercase" style="color:rgba(228,223,213,0.6)">Motorización avanzada Matter 1.5 · Instalación técnica incluida</p>
+    <div class="flex flex-col sm:flex-row justify-center gap-4 mb-16">
+        <a href="#tarifas" class="bg-gold text-dark px-10 py-4 text-xs font-bold uppercase tracking-[3px] hover:bg-white transition">Ver Tarifas</a>
+        <a href="#calculadora" class="btn-gold">Calcular Presupuesto</a>
+    </div>
+    <div class="flex flex-wrap justify-center gap-8 text-[9px] uppercase tracking-[0.35em]" style="color:rgba(201,169,110,0.45)">
+        <span>✓ Garantía hasta 5 años</span>
+        <span>✓ Instalación misma semana</span>
+        <span>✓ Presupuesto gratuito</span>
+        <span>✓ +200 instalaciones</span>
+    </div>
+</div>
+```
+
+</section>
+
+<!-- ═══ COUNTERS ═══ -->
+
+<section style="background:var(--dark-warm); border-top:1px solid rgba(201,169,110,0.2); border-bottom:1px solid rgba(201,169,110,0.2)">
+    <div class="container mx-auto px-6 py-14">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-0">
+            <div class="text-center py-8 px-4" style="border-right:1px solid rgba(201,169,110,0.12)">
+                <div class="counter-val" data-target="200" data-suffix="+">0</div>
+                <p class="text-[10px] uppercase tracking-[0.35em] mt-2" style="color:rgba(201,169,110,0.5)">Instalaciones</p>
+            </div>
+            <div class="text-center py-8 px-4" style="border-right:1px solid rgba(201,169,110,0.12)">
+                <div class="counter-val" data-target="5" data-suffix=" años">0</div>
+                <p class="text-[10px] uppercase tracking-[0.35em] mt-2" style="color:rgba(201,169,110,0.5)">Experiencia</p>
+            </div>
+            <div class="text-center py-8 px-4" style="border-right:1px solid rgba(201,169,110,0.12)">
+                <div class="counter-val" data-target="48" data-suffix="h">0</div>
+                <p class="text-[10px] uppercase tracking-[0.35em] mt-2" style="color:rgba(201,169,110,0.5)">Plazo instalación</p>
+            </div>
+            <div class="text-center py-8 px-4">
+                <div class="counter-val" data-target="5" data-suffix="★">0</div>
+                <p class="text-[10px] uppercase tracking-[0.35em] mt-2" style="color:rgba(201,169,110,0.5)">Valoración Google</p>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- Matter 1.5 -->
+<!-- ═══ MATTER 1.5 ═══ -->
 
-<section class="section-padding bg-stone-900/20">
-    <div class="container mx-auto px-6 grid md:grid-cols-2 gap-20 items-center">
+<section class="section-pad bg-warm">
+    <div class="container mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
         <div class="reveal">
-            <img src="persyvex_detail.jpg" alt="Motor tubular DC con carga inalámbrica USB-C — Tecnología Matter 1.5" class="w-full border border-white/5">
-        </div>
-        <div class="reveal">
-            <h2 class="text-5xl mb-8 italic">Tecnología <span class="text-gold not-italic font-bold">Matter 1.5</span></h2>
-            <p class="text-lg opacity-60 font-light leading-relaxed mb-8">No instalamos simples motores. Implementamos ecosistemas. Con el nuevo estándar Matter 1.5, sus persianas se comunican de forma nativa con Apple Home, Google y Alexa sin puentes ni retrasos.</p>
-            <ul class="space-y-4 mb-10">
-                <li class="flex items-center gap-4 text-sm uppercase tracking-widest opacity-80"><span class="w-2 h-2 bg-gold flex-shrink-0"></span> Respuesta instantánea &lt; 100ms</li>
-                <li class="flex items-center gap-4 text-sm uppercase tracking-widest opacity-80"><span class="w-2 h-2 bg-gold flex-shrink-0"></span> Silencio total &lt; 22dB (motores coreless)</li>
-                <li class="flex items-center gap-4 text-sm uppercase tracking-widest opacity-80"><span class="w-2 h-2 bg-gold flex-shrink-0"></span> Carga solar o USB-C integrada</li>
-                <li class="flex items-center gap-4 text-sm uppercase tracking-widest opacity-80"><span class="w-2 h-2 bg-gold flex-shrink-0"></span> Control solar adaptativo por IA</li>
-            </ul>
-
-```
-        <!-- Platform compatibility -->
-        <div class="mb-10">
-            <p class="text-[9px] uppercase tracking-[0.4em] opacity-30 mb-4">Compatible con</p>
-            <div class="flex flex-wrap gap-2">
-                <span class="platform-pill">
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" class="opacity-60"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11"/></svg>
-                    Apple Home
-                </span>
-                <span class="platform-pill">
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" class="opacity-60"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M8 12h8M12 8v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-                    Google Home
-                </span>
-                <span class="platform-pill">
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" class="opacity-60"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
-                    Amazon Alexa
-                </span>
-                <span class="platform-pill">
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" class="opacity-60"><rect x="2" y="2" width="9" height="9" rx="1"/><rect x="13" y="2" width="9" height="9" rx="1"/><rect x="2" y="13" width="9" height="9" rx="1"/><rect x="13" y="13" width="9" height="9" rx="1"/></svg>
-                    SmartThings
-                </span>
+            <div class="relative overflow-hidden" style="border:1px solid rgba(201,169,110,0.15); background:#0a0807">
+                <img src="persyvex_detail.jpg"
+                     alt="Motor tubular DC — Matter 1.5"
+                     class="w-full block"
+                     onerror="this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80'; this.style.opacity='.45'">
+                <div class="absolute bottom-0 left-0 right-0 h-20" style="background:linear-gradient(to top,var(--dark-warm),transparent)"></div>
+            </div>
+            <div class="grid grid-cols-3" style="border:1px solid rgba(201,169,110,0.15); border-top:none">
+                <div class="p-4 text-center" style="border-right:1px solid rgba(201,169,110,0.1)">
+                    <div class="text-gold text-xl font-bold font-serif">&lt;22dB</div>
+                    <div class="text-[9px] uppercase tracking-widest mt-1" style="color:rgba(228,223,213,0.35)">Silencio</div>
+                </div>
+                <div class="p-4 text-center" style="border-right:1px solid rgba(201,169,110,0.1)">
+                    <div class="text-gold text-xl font-bold font-serif">USB-C</div>
+                    <div class="text-[9px] uppercase tracking-widest mt-1" style="color:rgba(228,223,213,0.35)">Carga</div>
+                </div>
+                <div class="p-4 text-center">
+                    <div class="text-gold text-xl font-bold font-serif">5 años</div>
+                    <div class="text-[9px] uppercase tracking-widest mt-1" style="color:rgba(228,223,213,0.35)">Garantía</div>
+                </div>
             </div>
         </div>
-
-        <!-- Protocol row -->
-        <div>
-            <p class="text-[9px] uppercase tracking-[0.4em] opacity-30 mb-4">Protocolos instalados</p>
+        <div class="reveal">
+            <p class="text-[10px] uppercase tracking-[0.5em] mb-4" style="color:rgba(201,169,110,0.6)">Vanguardia tecnológica</p>
+            <h2 class="text-5xl md:text-6xl leading-tight italic mb-4">Estándar <span class="text-gold not-italic font-bold">Matter 1.5</span></h2>
+            <div class="gold-line-left"></div>
+            <p class="text-base mb-8 leading-relaxed" style="color:rgba(228,223,213,0.72)">No instalamos simples motores. Implementamos ecosistemas inteligentes. Con Matter 1.5, sus persianas se comunican de forma nativa con Apple Home, Google y Alexa — sin puentes, sin retrasos, sin complicaciones.</p>
+            <ul class="space-y-4 mb-10">
+                <li class="flex items-center gap-4 text-sm uppercase tracking-widest" style="color:rgba(228,223,213,0.78)"><span class="w-2 h-2 flex-shrink-0" style="background:var(--gold)"></span>Respuesta instantánea &lt; 100ms</li>
+                <li class="flex items-center gap-4 text-sm uppercase tracking-widest" style="color:rgba(228,223,213,0.78)"><span class="w-2 h-2 flex-shrink-0" style="background:var(--gold)"></span>Silencio total &lt; 22dB — motores coreless</li>
+                <li class="flex items-center gap-4 text-sm uppercase tracking-widest" style="color:rgba(228,223,213,0.78)"><span class="w-2 h-2 flex-shrink-0" style="background:var(--gold)"></span>Carga solar o USB-C integrada</li>
+                <li class="flex items-center gap-4 text-sm uppercase tracking-widest" style="color:rgba(228,223,213,0.78)"><span class="w-2 h-2 flex-shrink-0" style="background:var(--gold)"></span>Control solar adaptativo por IA</li>
+            </ul>
+            <p class="text-[10px] uppercase tracking-[0.4em] mb-3" style="color:rgba(201,169,110,0.5)">Compatible con</p>
+            <div class="flex flex-wrap gap-2 mb-7">
+                <span class="platform-pill">🍎 Apple Home</span>
+                <span class="platform-pill">🏠 Google Home</span>
+                <span class="platform-pill">🔊 Amazon Alexa</span>
+                <span class="platform-pill">⬡ SmartThings</span>
+            </div>
+            <p class="text-[10px] uppercase tracking-[0.4em] mb-3" style="color:rgba(201,169,110,0.5)">Protocolos</p>
             <div class="flex flex-wrap gap-2">
-                <span class="proto-badge"><span class="dot" style="background:#C9A96E"></span>Matter 1.5</span>
+                <span class="proto-badge"><span class="dot" style="background:var(--gold)"></span>Matter 1.5</span>
                 <span class="proto-badge"><span class="dot" style="background:#5B8CDB"></span>Zigbee</span>
                 <span class="proto-badge"><span class="dot" style="background:#4CAF50"></span>Wi-Fi</span>
                 <span class="proto-badge"><span class="dot" style="background:#2196F3"></span>Bluetooth</span>
-                <span class="proto-badge"><span class="dot" style="background:#9E9E9E"></span>RF 433</span>
+                <span class="proto-badge"><span class="dot" style="background:#aaa"></span>RF 433</span>
                 <span class="proto-badge"><span class="dot" style="background:#FF5722"></span>KNX</span>
             </div>
         </div>
     </div>
-</div>
-```
-
 </section>
 
-<!-- Ecosystem strip -->
+<!-- ═══ ECOSYSTEM ═══ -->
 
-<section class="py-20 border-y border-white/5 overflow-hidden">
+<section class="py-16" style="border-top:1px solid rgba(201,169,110,0.15); background:var(--dark)">
     <div class="container mx-auto px-6">
-        <p class="text-center text-[9px] uppercase tracking-[0.5em] opacity-30 mb-12">Control desde cualquier dispositivo</p>
-        <div class="relative">
-            <img src="ecosystem_devices.png" alt="Control desde Mac, iPhone, iPad, Apple Watch, Amazon Echo y más" class="w-full max-w-4xl mx-auto block opacity-70 mix-blend-lighten">
-        </div>
-        <p class="text-center text-[9px] uppercase tracking-[0.4em] opacity-20 mt-8">Apple Home · Google Home · Amazon Alexa · Samsung SmartThings</p>
+        <p class="text-center text-[10px] uppercase tracking-[0.5em] mb-10" style="color:rgba(201,169,110,0.45)">Control desde cualquier dispositivo</p>
+        <img src="ecosystem_devices.png" alt="Control desde Mac, iPhone, iPad, Echo"
+             class="w-full max-w-4xl mx-auto block" style="opacity:.72; mix-blend-mode:lighten"
+             onerror="this.style.display='none'">
+        <p class="text-center text-[10px] uppercase tracking-[0.4em] mt-8" style="color:rgba(201,169,110,0.25)">Apple Home · Google Home · Amazon Alexa · Samsung SmartThings</p>
     </div>
 </section>
 
-<!-- Tarifas -->
+<!-- ═══ TARIFAS ═══ -->
 
-<section id="tarifas" class="section-padding border-y border-white/5 overflow-hidden">
+<section id="tarifas" class="section-pad bg-mid" style="border-top:1px solid rgba(201,169,110,0.2); border-bottom:1px solid rgba(201,169,110,0.2)">
     <div class="container mx-auto px-6">
-        <div class="text-center mb-20">
-            <h2 class="text-5xl md:text-7xl mb-6 italic">Tarifas <span class="text-gold not-italic font-bold">transparentes</span></h2>
-            <p class="text-sm uppercase tracking-[0.3em] opacity-40">Precio por ventana · Instalación técnica incluida</p>
+        <div class="text-center mb-16">
+            <p class="text-[10px] uppercase tracking-[0.5em] mb-4" style="color:rgba(201,169,110,0.6)">Sin sorpresas</p>
+            <h2 class="text-5xl md:text-7xl mb-4 italic">Tarifas <span class="text-gold not-italic font-bold">transparentes</span></h2>
+            <div class="gold-line"></div>
+            <p class="text-sm uppercase tracking-[0.3em]" style="color:rgba(228,223,213,0.4)">Precio por ventana · Instalación técnica incluida</p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
-
-```
-        <div class="bg-gray-custom border border-white/10 p-6 md:p-10 flex flex-col">
-            <p class="text-[10px] uppercase tracking-[0.4em] opacity-40 mb-4">Tier 01</p>
-            <h3 class="text-4xl mb-2 italic font-light">Esencial</h3>
-            <p class="text-[10px] uppercase tracking-widest opacity-40 mb-8">Lexman Básico</p>
-            <div class="mb-8">
-                <span class="text-5xl text-gold font-bold">279€</span>
-                <span class="text-xs opacity-40 ml-2">por ventana</span>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <div class="flex flex-col p-7 md:p-8" style="background:var(--gray); border:1px solid rgba(255,255,255,0.07)">
+                <p class="text-[10px] uppercase tracking-[0.4em] mb-4" style="color:rgba(201,169,110,0.5)">Tier 01 · Esencial</p>
+                <h3 class="text-3xl italic font-light mb-1">Motor básico</h3>
+                <p class="text-[10px] uppercase tracking-widest mb-6" style="color:rgba(228,223,213,0.3)">Lexman certificado</p>
+                <div class="pb-6 mb-6" style="border-bottom:1px solid rgba(255,255,255,0.06)">
+                    <span class="text-5xl text-gold font-bold">279€</span>
+                    <span class="text-xs ml-2" style="color:rgba(228,223,213,0.35)">/ ventana</span>
+                </div>
+                <ul class="space-y-3 mb-10 flex-grow">
+                    <li class="flex gap-3 text-sm" style="color:rgba(228,223,213,0.75)"><span class="text-gold mt-0.5 flex-shrink-0">▸</span>Motor Lexman 20Nm certificado</li>
+                    <li class="flex gap-3 text-sm" style="color:rgba(228,223,213,0.75)"><span class="text-gold mt-0.5 flex-shrink-0">▸</span>Interruptor de pared incluido</li>
+                    <li class="flex gap-3 text-sm" style="color:rgba(228,223,213,0.75)"><span class="text-gold mt-0.5 flex-shrink-0">▸</span>Instalación técnica profesional</li>
+                    <li class="flex gap-3 text-sm" style="color:rgba(228,223,213,0.75)"><span class="text-gold mt-0.5 flex-shrink-0">▸</span>Garantía 2 años</li>
+                </ul>
+                <a href="https://wa.me/34624420102?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20el%20tier%20Esencial%20(279%E2%82%AC)." class="btn-gold block text-center">Consultar</a>
             </div>
-            <ul class="space-y-3 mb-10 flex-grow">
-                <li class="flex items-start gap-3 text-sm opacity-70"><span class="text-gold mt-1">▸</span> Motor Lexman 20Nm certificado</li>
-                <li class="flex items-start gap-3 text-sm opacity-70"><span class="text-gold mt-1">▸</span> Interruptor de pared incluido</li>
-                <li class="flex items-start gap-3 text-sm opacity-70"><span class="text-gold mt-1">▸</span> Instalación técnica profesional</li>
-                <li class="flex items-start gap-3 text-sm opacity-70"><span class="text-gold mt-1">▸</span> Garantía 2 años</li>
-            </ul>
-            <a href="https://wa.me/34624420102?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20el%20tier%20Esencial%20(279%E2%82%AC)." class="btn-gold w-full">Consultar</a>
+            <div class="flex flex-col p-7 md:p-8 tier-card-featured border-2" style="background:#1c1a14">
+                <p class="text-[10px] uppercase tracking-[0.4em] mb-4 text-gold">Tier 02 · Conectado</p>
+                <h3 class="text-3xl italic font-light mb-1">Motor smart</h3>
+                <p class="text-[10px] uppercase tracking-widest mb-6" style="color:rgba(228,223,213,0.3)">App iOS & Android</p>
+                <div class="pb-6 mb-6" style="border-bottom:1px solid rgba(201,169,110,0.2)">
+                    <span class="text-5xl text-gold font-bold">355€</span>
+                    <span class="text-xs ml-2" style="color:rgba(228,223,213,0.4)">/ ventana</span>
+                </div>
+                <ul class="space-y-3 mb-10 flex-grow">
+                    <li class="flex gap-3 text-sm" style="color:rgba(228,223,213,0.88)"><span class="text-gold mt-0.5 flex-shrink-0">▸</span>Motor Lexman Smart</li>
+                    <li class="flex gap-3 text-sm" style="color:rgba(228,223,213,0.88)"><span class="text-gold mt-0.5 flex-shrink-0">▸</span>Control por app iOS / Android</li>
+                    <li class="flex gap-3 text-sm" style="color:rgba(228,223,213,0.88)"><span class="text-gold mt-0.5 flex-shrink-0">▸</span>Programación horaria ilimitada</li>
+                    <li class="flex gap-3 text-sm" style="color:rgba(228,223,213,0.88)"><span class="text-gold mt-0.5 flex-shrink-0">▸</span>Instalación y configuración completa</li>
+                    <li class="flex gap-3 text-sm" style="color:rgba(228,223,213,0.88)"><span class="text-gold mt-0.5 flex-shrink-0">▸</span>Garantía 2 años</li>
+                </ul>
+                <a href="https://wa.me/34624420102?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20el%20tier%20Conectado%20(355%E2%82%AC)." class="block text-center py-4 text-xs font-bold uppercase tracking-[3px] bg-gold text-dark hover:bg-white transition">Consultar</a>
+            </div>
+            <div class="flex flex-col p-7 md:p-8" style="background:var(--gray); border:1px solid rgba(255,255,255,0.07)">
+                <p class="text-[10px] uppercase tracking-[0.4em] mb-4" style="color:rgba(201,169,110,0.5)">Tier 03 · Premium</p>
+                <h3 class="text-3xl italic font-light mb-1">Smart Home</h3>
+                <p class="text-[10px] uppercase tracking-widest mb-6" style="color:rgba(228,223,213,0.3)">Matter-Ready · Voz</p>
+                <div class="pb-6 mb-6" style="border-bottom:1px solid rgba(255,255,255,0.06)">
+                    <span class="text-5xl text-gold font-bold">625€</span>
+                    <span class="text-xs ml-2" style="color:rgba(228,223,213,0.35)">/ ventana</span>
+                </div>
+                <ul class="space-y-3 mb-10 flex-grow">
+                    <li class="flex gap-3 text-sm" style="color:rgba(228,223,213,0.75)"><span class="text-gold mt-0.5 flex-shrink-0">▸</span>Motor premium Matter-ready</li>
+                    <li class="flex gap-3 text-sm" style="color:rgba(228,223,213,0.75)"><span class="text-gold mt-0.5 flex-shrink-0">▸</span>Voz: Alexa / Google / Siri</li>
+                    <li class="flex gap-3 text-sm" style="color:rgba(228,223,213,0.75)"><span class="text-gold mt-0.5 flex-shrink-0">▸</span>Apple Home / Google Home</li>
+                    <li class="flex gap-3 text-sm" style="color:rgba(228,223,213,0.75)"><span class="text-gold mt-0.5 flex-shrink-0">▸</span>Control adaptativo solar</li>
+                    <li class="flex gap-3 text-sm" style="color:rgba(228,223,213,0.75)"><span class="text-gold mt-0.5 flex-shrink-0">▸</span>Compatible Shelly 2.5</li>
+                    <li class="flex gap-3 text-sm" style="color:rgba(228,223,213,0.75)"><span class="text-gold mt-0.5 flex-shrink-0">▸</span>Garantía 3 años</li>
+                </ul>
+                <a href="https://wa.me/34624420102?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20el%20tier%20Smart%20Home%20(625%E2%82%AC)." class="btn-gold block text-center">Consultar</a>
+            </div>
         </div>
-
-        <div class="bg-gray-custom border-2 p-6 md:p-10 flex flex-col tier-card-featured">
-            <p class="text-[10px] uppercase tracking-[0.4em] text-gold mb-4">Tier 02</p>
-            <h3 class="text-4xl mb-2 italic font-light">Conectado</h3>
-            <p class="text-[10px] uppercase tracking-widest opacity-40 mb-8">Lexman + App Móvil</p>
-            <div class="mb-8">
-                <span class="text-5xl text-gold font-bold">355€</span>
-                <span class="text-xs opacity-40 ml-2">por ventana</span>
-            </div>
-            <ul class="space-y-3 mb-10 flex-grow">
-                <li class="flex items-start gap-3 text-sm opacity-80"><span class="text-gold mt-1">▸</span> Motor Lexman Smart</li>
-                <li class="flex items-start gap-3 text-sm opacity-80"><span class="text-gold mt-1">▸</span> Control por app móvil iOS / Android</li>
-                <li class="flex items-start gap-3 text-sm opacity-80"><span class="text-gold mt-1">▸</span> Programación horaria ilimitada</li>
-                <li class="flex items-start gap-3 text-sm opacity-80"><span class="text-gold mt-1">▸</span> Instalación y configuración</li>
-                <li class="flex items-start gap-3 text-sm opacity-80"><span class="text-gold mt-1">▸</span> Garantía 2 años</li>
-            </ul>
-            <a href="https://wa.me/34624420102?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20el%20tier%20Conectado%20(355%E2%82%AC)." class="bg-gold text-dark py-3 px-6 text-xs font-bold uppercase tracking-widest text-center hover:bg-white transition">Consultar</a>
-        </div>
-
-        <div class="bg-gray-custom border border-white/10 p-6 md:p-10 flex flex-col">
-            <p class="text-[10px] uppercase tracking-[0.4em] opacity-40 mb-4">Tier 03</p>
-            <h3 class="text-4xl mb-2 italic font-light">Smart Home</h3>
-            <p class="text-[10px] uppercase tracking-widest opacity-40 mb-8">Matter-Ready · Voz</p>
-            <div class="mb-8">
-                <span class="text-5xl text-gold font-bold">625€</span>
-                <span class="text-xs opacity-40 ml-2">por ventana</span>
-            </div>
-            <ul class="space-y-3 mb-10 flex-grow">
-                <li class="flex items-start gap-3 text-sm opacity-70"><span class="text-gold mt-1">▸</span> Motor premium Matter-ready</li>
-                <li class="flex items-start gap-3 text-sm opacity-70"><span class="text-gold mt-1">▸</span> Control por voz Alexa / Google / Siri</li>
-                <li class="flex items-start gap-3 text-sm opacity-70"><span class="text-gold mt-1">▸</span> Integración Apple Home / Google Home</li>
-                <li class="flex items-start gap-3 text-sm opacity-70"><span class="text-gold mt-1">▸</span> Control adaptativo solar</li>
-                <li class="flex items-start gap-3 text-sm opacity-70"><span class="text-gold mt-1">▸</span> Compatible Shelly 2.5</li>
-                <li class="flex items-start gap-3 text-sm opacity-70"><span class="text-gold mt-1">▸</span> Garantía 3 años</li>
-            </ul>
-            <a href="https://wa.me/34624420102?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20el%20tier%20Smart%20Home%20(625%E2%82%AC)." class="btn-gold w-full">Consultar</a>
+        <div class="text-center mt-12 max-w-2xl mx-auto">
+            <p class="text-sm font-light leading-relaxed" style="color:rgba(228,223,213,0.5)">¿Gama premium? Para <span class="text-gold">ABYS Smart Matter 1.5</span> o sistemas profesionales <span class="text-gold">Somfy Animeo / KNX</span> (desde 15.000€), contacte directamente con Viktor.</p>
+            <a href="https://wa.me/34624420102?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20instalaciones%20Somfy%20KNX%20premium." class="inline-block mt-4 text-[10px] uppercase tracking-[0.4em] text-gold border-b border-gold pb-1 hover:opacity-70 transition">Contactar técnico →</a>
         </div>
     </div>
-
-    <div class="text-center mt-16 max-w-3xl mx-auto">
-        <p class="text-sm opacity-60 font-light leading-relaxed">¿Busca la gama premium? Para instalaciones <span class="text-gold">ABYS Smart Matter 1.5 nativo (499–850€)</span> o sistemas profesionales <span class="text-gold">Somfy Animeo / KNX</span>, consulte directamente con nuestro equipo técnico.</p>
-        <a href="https://wa.me/34624420102?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20instalaciones%20premium%20Matter%201.5%20o%20Somfy/KNX." class="inline-block mt-6 text-[10px] uppercase tracking-[0.4em] text-gold border-b border-gold pb-1 hover:opacity-70 transition">Contactar técnico →</a>
-    </div>
-</div>
-```
-
 </section>
 
-<!-- Ahorro -->
+<!-- ═══ PROCESO ═══ -->
 
-<section class="section-padding border-b border-white/5">
+<section class="section-pad bg-warm">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+            <p class="text-[10px] uppercase tracking-[0.5em] mb-4" style="color:rgba(201,169,110,0.6)">Cómo trabajamos</p>
+            <h2 class="text-5xl md:text-6xl italic mb-4">Tres pasos, <span class="text-gold not-italic font-bold">sin complicaciones</span></h2>
+            <div class="gold-line"></div>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            <div class="reveal relative p-8" style="border:1px solid rgba(201,169,110,0.15); background:var(--gray)">
+                <div class="step-num">01</div>
+                <div class="relative z-10">
+                    <div class="text-gold text-3xl mb-4">📞</div>
+                    <h3 class="text-2xl italic mb-3">Visita gratuita</h3>
+                    <p class="text-sm leading-relaxed" style="color:rgba(228,223,213,0.65)">Le llamamos en menos de 5 minutos. Acordamos visita técnica gratuita en su domicilio para evaluar y presupuestar.</p>
+                </div>
+            </div>
+            <div class="reveal relative p-8" style="border:1px solid rgba(201,169,110,0.3); background:#1c1a14">
+                <div class="step-num">02</div>
+                <div class="relative z-10">
+                    <div class="text-gold text-3xl mb-4">⚙️</div>
+                    <h3 class="text-2xl italic mb-3">Instalación técnica</h3>
+                    <p class="text-sm leading-relaxed" style="color:rgba(228,223,213,0.72)">Nuestros técnicos instalan y configuran el sistema completo. Normalmente en menos de 48 horas desde la firma.</p>
+                </div>
+            </div>
+            <div class="reveal relative p-8" style="border:1px solid rgba(201,169,110,0.15); background:var(--gray)">
+                <div class="step-num">03</div>
+                <div class="relative z-10">
+                    <div class="text-gold text-3xl mb-4">✅</div>
+                    <h3 class="text-2xl italic mb-3">Disfrute</h3>
+                    <p class="text-sm leading-relaxed" style="color:rgba(228,223,213,0.65)">Le enseñamos a usar el sistema. Soporte técnico post-instalación incluido durante toda la garantía.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ AHORRO ═══ -->
+
+<section class="section-pad bg-mid" style="border-top:1px solid rgba(201,169,110,0.15)">
     <div class="container mx-auto px-6 text-center">
-        <h2 class="text-5xl md:text-7xl mb-12 italic">Su casa se <span class="text-gold not-italic font-bold">paga sola.</span></h2>
-        <div class="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
-            <div class="p-10 bg-gray-custom border border-white/5">
-                <span class="text-6xl text-gold font-bold mb-4 block">30%</span>
-                <p class="uppercase tracking-widest text-xs opacity-40 mb-4">Ahorro Energético</p>
-                <p class="opacity-60 font-light">La motorización no es un lujo, es una inversión financiera en su factura eléctrica.</p>
+        <p class="text-[10px] uppercase tracking-[0.5em] mb-4" style="color:rgba(201,169,110,0.6)">Inversión inteligente</p>
+        <h2 class="text-5xl md:text-7xl italic mb-4">Su casa se <span class="text-gold not-italic font-bold">paga sola.</span></h2>
+        <div class="gold-line"></div>
+        <div class="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto mt-4">
+            <div class="p-10" style="background:var(--gray); border:1px solid rgba(201,169,110,0.2)">
+                <span class="text-6xl text-gold font-bold mb-3 block">30%</span>
+                <p class="text-[10px] uppercase tracking-widest mb-4 text-gold">Ahorro Energético</p>
+                <p class="text-sm leading-relaxed" style="color:rgba(228,223,213,0.68)">Reducción real en su factura eléctrica desde el primer mes. La motorización no es un lujo, es una inversión financiera.</p>
             </div>
-            <div class="p-10 bg-gray-custom border border-white/5">
-                <span class="text-6xl text-gold font-bold mb-4 block">Hasta 20%*</span>
-                <p class="uppercase tracking-widest text-xs opacity-40 mb-4">Deducción IRPF</p>
-                <p class="opacity-60 font-light">Le gestionamos las ayudas estatales por mejora de eficiencia en su vivienda principal.</p>
-                <p class="text-[9px] opacity-30 mt-4 italic">*Sujeto a certificado de eficiencia energética y cumplimiento del RDL 19/2021.</p>
+            <div class="p-10" style="background:var(--gray); border:1px solid rgba(201,169,110,0.2)">
+                <span class="text-6xl text-gold font-bold mb-3 block">20%*</span>
+                <p class="text-[10px] uppercase tracking-widest mb-4 text-gold">Deducción IRPF</p>
+                <p class="text-sm leading-relaxed" style="color:rgba(228,223,213,0.68)">Le gestionamos las ayudas estatales por mejora de eficiencia energética en vivienda principal.</p>
+                <p class="text-[9px] mt-3 italic" style="color:rgba(228,223,213,0.28)">*Sujeto a certificado eficiencia energética. RDL 19/2021.</p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Calculadora -->
+<!-- ═══ CALCULADORA ═══ -->
 
-<section id="calculadora" class="section-padding bg-stone-900/10">
+<section id="calculadora" class="section-pad bg-warm">
     <div class="container mx-auto px-6 max-w-2xl">
         <div class="text-center mb-12">
-            <h2 class="text-5xl mb-4 italic">Presupuesto <span class="text-gold not-italic font-bold">Express</span></h2>
-            <p class="text-sm uppercase tracking-[0.3em] opacity-40">Respuesta en menos de 5 minutos</p>
+            <p class="text-[10px] uppercase tracking-[0.5em] mb-4" style="color:rgba(201,169,110,0.6)">Sin compromiso</p>
+            <h2 class="text-5xl italic mb-4">Presupuesto <span class="text-gold not-italic font-bold">Express</span></h2>
+            <div class="gold-line"></div>
+            <p class="text-sm uppercase tracking-[0.3em]" style="color:rgba(228,223,213,0.4)">Respuesta en menos de 5 minutos</p>
         </div>
-        <div class="bg-gray-custom p-8 md:p-12 border border-white/5 space-y-10">
+        <div class="p-8 md:p-12 space-y-10" style="background:var(--gray); border:1px solid rgba(201,169,110,0.15)">
+            <div>
+                <label class="block text-[11px] uppercase tracking-widest mb-5" style="color:rgba(201,169,110,0.6)">¿Qué servicio necesita?</label>
+                <div class="grid grid-cols-3 gap-3">
+                    <button type="button" data-type="Reparación"  class="type-btn py-4 border text-[11px] uppercase tracking-widest hover:border-gold transition" style="border-color:rgba(255,255,255,0.12)">Reparar</button>
+                    <button type="button" data-type="Motorización" class="type-btn py-4 border text-[11px] uppercase tracking-widest hover:border-gold transition" style="border-color:rgba(255,255,255,0.12)">Motorizar</button>
+                    <button type="button" data-type="Instalación"  class="type-btn py-4 border text-[11px] uppercase tracking-widest hover:border-gold transition" style="border-color:rgba(255,255,255,0.12)">Instalar</button>
+                </div>
+            </div>
+            <div id="tier-section">
+                <label class="block text-[11px] uppercase tracking-widest mb-5" style="color:rgba(201,169,110,0.6)">Tarifa</label>
+                <div class="grid grid-cols-3 gap-3">
+                    <button type="button" data-tier="Esencial"   data-price="279" class="tier-btn py-4 border text-[11px] uppercase tracking-widest hover:border-gold transition flex flex-col gap-1 items-center" style="border-color:rgba(255,255,255,0.12)"><span>Esencial</span><span class="text-gold font-bold">279€</span></button>
+                    <button type="button" data-tier="Conectado"  data-price="355" class="tier-btn py-4 border text-[11px] uppercase tracking-widest hover:border-gold transition flex flex-col gap-1 items-center" style="border-color:rgba(255,255,255,0.12)"><span>Conectado</span><span class="text-gold font-bold">355€</span></button>
+                    <button type="button" data-tier="Smart Home" data-price="625" class="tier-btn py-4 border text-[11px] uppercase tracking-widest hover:border-gold transition flex flex-col gap-1 items-center" style="border-color:rgba(255,255,255,0.12)"><span>Smart</span><span class="text-gold font-bold">625€</span></button>
+                </div>
+            </div>
+            <div>
+                <div class="text-[11px] uppercase tracking-widest mb-5 flex justify-between" style="color:rgba(201,169,110,0.6)">
+                    <span>Número de ventanas</span><span id="window-count" class="text-gold font-bold">1</span>
+                </div>
+                <input type="range" min="1" max="15" value="1" id="window-range" class="w-full h-1 cursor-pointer" style="accent-color:var(--gold)">
+            </div>
+            <div>
+                <label class="block text-[11px] uppercase tracking-widest mb-4" for="city-select" style="color:rgba(201,169,110,0.6)">Ubicación</label>
+                <select id="city-select" class="w-full bg-transparent border-b py-3 text-base focus:outline-none" style="border-color:rgba(255,255,255,0.15); color:var(--text)">
+                    <option style="background:#1e1c19" value="Madrid Capital">Madrid Capital</option>
+                    <option style="background:#1e1c19" value="Getafe">Getafe</option>
+                    <option style="background:#1e1c19" value="Leganés">Leganés</option>
+                    <option style="background:#1e1c19" value="Fuenlabrada">Fuenlabrada</option>
+                    <option style="background:#1e1c19" value="Parla">Parla</option>
+                </select>
+            </div>
+            <div class="pt-6" style="border-top:1px solid rgba(255,255,255,0.07)">
+                <p class="text-[10px] uppercase tracking-widest mb-3" style="color:rgba(201,169,110,0.5)">Estimación</p>
+                <p id="estimated-price" class="text-5xl text-gold font-bold font-serif">—</p>
+                <p id="price-note" class="text-sm mt-2 italic" style="color:rgba(228,223,213,0.4)">Seleccione servicio y tarifa para ver el precio</p>
+            </div>
+            <button type="button" id="send-whatsapp" class="w-full bg-gold text-dark py-5 text-xs font-bold uppercase tracking-[3px] hover:bg-white transition">Solicitar Presupuesto por WhatsApp</button>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ PORTFOLIO — FOTOS REALES EN COLOR ═══ -->
+
+<section class="section-pad bg-mid">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-14">
+            <p class="text-[10px] uppercase tracking-[0.5em] mb-4" style="color:rgba(201,169,110,0.6)">Galería</p>
+            <h2 class="text-4xl md:text-6xl italic mb-4">Proyectos en <span class="text-gold not-italic">Madrid</span></h2>
+            <div class="gold-line"></div>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="reveal">
+                <div class="portfolio-img-wrap overflow-hidden aspect-[3/4]" style="background:var(--gray)">
+                    <img src="assets/proyectos/obra_1.jpg" alt="Instalación persiana exterior — Madrid" class="portfolio-img">
+                </div>
+                <p class="mt-4 text-[10px] uppercase tracking-widest" style="color:rgba(201,169,110,0.5)">Instalación exterior · Terraza</p>
+            </div>
+            <div class="reveal">
+                <div class="portfolio-img-wrap overflow-hidden aspect-[3/4]" style="background:var(--gray)">
+                    <img src="assets/proyectos/obra_2.jpg" alt="Motorización persiana interior — Getafe" class="portfolio-img">
+                </div>
+                <p class="mt-4 text-[10px] uppercase tracking-widest" style="color:rgba(201,169,110,0.5)">Motorización · Interior</p>
+            </div>
+            <div class="reveal">
+                <div class="portfolio-img-wrap overflow-hidden aspect-[3/4]" style="background:var(--gray)">
+                    <img src="assets/proyectos/obra_3.jpg" alt="Instalación técnica — Sur de Madrid" class="portfolio-img">
+                </div>
+                <p class="mt-4 text-[10px] uppercase tracking-widest" style="color:rgba(201,169,110,0.5)">Instalación técnica · Sur Madrid</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══ REVIEWS — REALES DE GOOGLE ═══ -->
+
+<section class="section-pad bg-warm" style="border-top:1px solid rgba(201,169,110,0.15)">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-14">
+            <div class="inline-flex items-center gap-2 mb-5" style="background:rgba(201,169,110,0.07); border:1px solid rgba(201,169,110,0.25); border-radius:100px; padding:7px 18px;">
+                <span class="text-gold text-sm">★★★★★</span>
+                <span class="text-[10px] uppercase tracking-[2px]" style="color:rgba(201,169,110,0.8)">5.0 · Google Reviews</span>
+            </div>
+            <h2 class="text-4xl italic mb-4">Lo que dicen <span class="text-gold not-italic">nuestros clientes</span></h2>
+            <div class="gold-line"></div>
+            <p class="text-sm" style="color:rgba(228,223,213,0.35)">Reseñas verificadas · Vecinos reales de Madrid</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6">
 
 ```
-        <div>
-            <label class="block text-[10px] uppercase tracking-widest opacity-40 mb-6">¿Qué servicio necesita?</label>
-            <div class="grid grid-cols-3 gap-4">
-                <button type="button" data-type="Reparación" class="type-btn p-4 border border-white/10 text-[10px] uppercase tracking-widest hover:border-gold transition">Reparar</button>
-                <button type="button" data-type="Motorización" class="type-btn p-4 border border-white/10 text-[10px] uppercase tracking-widest hover:border-gold transition">Motorizar</button>
-                <button type="button" data-type="Instalación" class="type-btn p-4 border border-white/10 text-[10px] uppercase tracking-widest hover:border-gold transition">Instalar</button>
+        <!-- Rafa Ruiz -->
+        <div class="reveal review-card">
+            <div class="flex items-center gap-3 mb-4">
+                <div class="review-avatar" style="background:#C9A96E; color:#000;">R</div>
+                <div class="flex-1 min-w-0">
+                    <p class="text-[11px] uppercase tracking-widest font-bold text-gold truncate">Rafa Ruiz</p>
+                    <p class="text-[9px]" style="color:rgba(228,223,213,0.35)">Experto local · hace 1 mes</p>
+                </div>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" class="flex-shrink-0"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
             </div>
+            <div class="text-gold text-base mb-3 tracking-widest">★★★★★</div>
+            <p class="text-sm leading-relaxed italic" style="color:rgba(228,223,213,0.78)">"Hemos puesto una persiana motorizada con ellos y todo estupendo, rápidos, atentos y muy buen precio. <strong class="text-gold not-italic">10/10</strong>"</p>
         </div>
 
-        <div id="tier-section">
-            <label class="block text-[10px] uppercase tracking-widest opacity-40 mb-6">Tarifa</label>
-            <div class="grid grid-cols-3 gap-4">
-                <button type="button" data-tier="Esencial" data-price="279" class="tier-btn p-4 border border-white/10 text-[10px] uppercase tracking-widest hover:border-gold transition flex flex-col gap-1">
-                    <span>Esencial</span>
-                    <span class="text-gold font-bold">279€</span>
-                </button>
-                <button type="button" data-tier="Conectado" data-price="355" class="tier-btn p-4 border border-white/10 text-[10px] uppercase tracking-widest hover:border-gold transition flex flex-col gap-1">
-                    <span>Conectado</span>
-                    <span class="text-gold font-bold">355€</span>
-                </button>
-                <button type="button" data-tier="Smart Home" data-price="625" class="tier-btn p-4 border border-white/10 text-[10px] uppercase tracking-widest hover:border-gold transition flex flex-col gap-1">
-                    <span>Smart Home</span>
-                    <span class="text-gold font-bold">625€</span>
-                </button>
+        <!-- Silvia Lara -->
+        <div class="reveal review-card">
+            <div class="flex items-center gap-3 mb-4">
+                <div class="review-avatar" style="background:#e91e63; color:#fff;">S</div>
+                <div class="flex-1 min-w-0">
+                    <p class="text-[11px] uppercase tracking-widest font-bold text-gold truncate">Silvia Lara Gonzalez</p>
+                    <p class="text-[9px]" style="color:rgba(228,223,213,0.35)">hace 3 meses</p>
+                </div>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" class="flex-shrink-0"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
             </div>
+            <div class="text-gold text-base mb-3 tracking-widest">★★★★★</div>
+            <p class="text-sm leading-relaxed italic" style="color:rgba(228,223,213,0.78)">"El presupuesto — el mejor con diferencia de todos los que llamé. Al día siguiente vinieron. Estoy <strong class="text-gold not-italic">ENCANTADA</strong>. Gracias a Victor el propietario, super atento."</p>
         </div>
 
-        <div>
-            <div class="text-[10px] uppercase tracking-widest opacity-40 mb-6 flex justify-between">
-                <span>Número de ventanas</span>
-                <span id="window-count" class="text-gold">1</span>
+        <!-- M Mañas -->
+        <div class="reveal review-card">
+            <div class="flex items-center gap-3 mb-4">
+                <div class="review-avatar" style="background:#9c27b0; color:#fff;">M</div>
+                <div class="flex-1 min-w-0">
+                    <p class="text-[11px] uppercase tracking-widest font-bold text-gold truncate">M Mañas</p>
+                    <p class="text-[9px]" style="color:rgba(228,223,213,0.35)">Experto local · hace 3 semanas</p>
+                </div>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" class="flex-shrink-0"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
             </div>
-            <input type="range" min="1" max="15" value="1" id="window-range" class="w-full h-1 bg-white/10 appearance-none cursor-pointer accent-gold">
+            <div class="text-gold text-base mb-3 tracking-widest">★★★★★</div>
+            <p class="text-sm leading-relaxed italic" style="color:rgba(228,223,213,0.78)">"No pongo más estrellas porque no se puede. Diagnosticó el problema con fotos, acudió al poco tiempo. <strong class="text-gold not-italic">Se nota la experiencia. Todo perfecto.</strong>"</p>
         </div>
 
-        <div>
-            <label class="block text-[10px] uppercase tracking-widest opacity-40 mb-6" for="city-select">Ubicación</label>
-            <select id="city-select" class="w-full bg-transparent border-b border-white/10 py-2 text-sm focus:outline-none focus:border-gold">
-                <option value="Madrid Capital" class="bg-dark">Madrid Capital</option>
-                <option value="Getafe" class="bg-dark">Getafe</option>
-                <option value="Leganés" class="bg-dark">Leganés</option>
-                <option value="Fuenlabrada" class="bg-dark">Fuenlabrada</option>
-                <option value="Parla" class="bg-dark">Parla</option>
-            </select>
+        <!-- Ignacio Butiña -->
+        <div class="reveal review-card">
+            <div class="flex items-center gap-3 mb-4">
+                <div class="review-avatar" style="background:#009688; color:#fff;">I</div>
+                <div class="flex-1 min-w-0">
+                    <p class="text-[11px] uppercase tracking-widest font-bold text-gold truncate">Ignacio Butiñá Alcaide</p>
+                    <p class="text-[9px]" style="color:rgba(228,223,213,0.35)">hace 1 día</p>
+                </div>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" class="flex-shrink-0"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+            </div>
+            <div class="text-gold text-base mb-3 tracking-widest">★★★★★</div>
+            <p class="text-sm leading-relaxed italic" style="color:rgba(228,223,213,0.78)">"Puntual, profesional y muy cuidadoso en todo el proceso. El resultado perfecto y se tomó el tiempo de explicarme todo con detalle. <strong class="text-gold not-italic">Sin duda lo recomendaría.</strong>"</p>
         </div>
 
-        <div class="border-t border-white/10 pt-8">
-            <p class="text-[10px] uppercase tracking-widest opacity-40 mb-3">Estimación</p>
-            <p id="estimated-price" class="text-4xl text-gold font-bold">—</p>
-            <p id="price-note" class="text-xs opacity-40 mt-2 italic">Seleccione servicio y tarifa para ver el precio</p>
+        <!-- Raul Rodriguez -->
+        <div class="reveal review-card">
+            <div class="flex items-center gap-3 mb-4">
+                <div class="review-avatar" style="background:#ff5722; color:#fff;">R</div>
+                <div class="flex-1 min-w-0">
+                    <p class="text-[11px] uppercase tracking-widest font-bold text-gold truncate">Raul Rodriguez</p>
+                    <p class="text-[9px]" style="color:rgba(228,223,213,0.35)">hace 5 días</p>
+                </div>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" class="flex-shrink-0"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+            </div>
+            <div class="text-gold text-base mb-3 tracking-widest">★★★★★</div>
+            <p class="text-sm leading-relaxed italic" style="color:rgba(228,223,213,0.78)">"Un trabajo de 10. En cinco días me dieron presupuesto y realizaron el trabajo. <strong class="text-gold not-italic">Mucha seriedad, puntualidad. Recomendable 100 por 100.</strong>"</p>
         </div>
 
-        <button type="button" id="send-whatsapp" class="w-full bg-gold text-dark py-5 text-xs font-bold uppercase tracking-[0.3em] hover:bg-white transition">Solicitar Presupuesto por WhatsApp</button>
+        <!-- Vicente Bravo -->
+        <div class="reveal review-card">
+            <div class="flex items-center gap-3 mb-4">
+                <div class="review-avatar" style="background:#607d8b; color:#fff;">V</div>
+                <div class="flex-1 min-w-0">
+                    <p class="text-[11px] uppercase tracking-widest font-bold text-gold truncate">Vicente Bravo Montero</p>
+                    <p class="text-[9px]" style="color:rgba(228,223,213,0.35)">hace 2 días · Getafe</p>
+                </div>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" class="flex-shrink-0"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+            </div>
+            <div class="text-gold text-base mb-3 tracking-widest">★★★★★</div>
+            <p class="text-sm leading-relaxed italic" style="color:rgba(228,223,213,0.78)">"Buscábamos empresa de Getafe, encontramos a Victor. Llegó puntual, instaló la persiana eléctrica pese a la reja. <strong class="text-gold not-italic">Un trabajo de 10. Gracias Víctor.</strong>"</p>
+        </div>
+
+    </div>
+
+    <!-- CTA Google -->
+    <div class="text-center mt-12">
+        <a href="https://g.page/r/persianasonline/review" target="_blank" rel="noopener"
+           class="btn-gold inline-flex items-center gap-3">
+            Ver todas las reseñas en Google
+            <svg width="13" height="13" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        </a>
     </div>
 </div>
 ```
 
 </section>
 
-<!-- Portfolio -->
+<!-- ═══ FAQ ═══ -->
 
-<section class="section-padding">
-    <div class="container mx-auto px-6">
-        <h2 class="text-4xl md:text-6xl mb-16 italic text-center">Nuestros proyectos en <span class="text-gold not-italic">Madrid</span></h2>
-        <div class="grid md:grid-cols-3 gap-6">
-            <div>
-                <div class="group overflow-hidden bg-gray-custom aspect-[3/4]">
-                    <img src="/assets/proyectos/IMG_5408.jpeg" alt="Integración Matter 1.5" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-700">
+<section class="section-pad bg-mid" style="border-top:1px solid rgba(201,169,110,0.15)">
+    <div class="container mx-auto px-6 max-w-3xl">
+        <div class="text-center mb-14">
+            <p class="text-[10px] uppercase tracking-[0.5em] mb-4" style="color:rgba(201,169,110,0.6)">Preguntas frecuentes</p>
+            <h2 class="text-4xl italic mb-4">Todo lo que <span class="text-gold not-italic">necesita saber</span></h2>
+            <div class="gold-line"></div>
+        </div>
+        <div id="faq-list">
+            <div class="faq-item">
+                <button class="faq-btn" onclick="toggleFaq(this)">
+                    <span class="text-base font-light">¿Cuánto tiempo tarda la instalación?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p class="pb-5 text-sm leading-relaxed" style="color:rgba(228,223,213,0.65)">Una persiana motorizada estándar se instala en 45–90 minutos. Para un piso completo de 6–8 ventanas, calculamos una jornada de trabajo. Normalmente cerramos instalación en menos de 48h desde la firma del presupuesto.</p>
                 </div>
-                <p class="mt-4 text-[10px] uppercase tracking-widest opacity-40">Integración Matter 1.5</p>
             </div>
-            <div>
-                <div class="group overflow-hidden bg-gray-custom aspect-[3/4]">
-                    <img src="/assets/proyectos/IMG_6898.jpeg" alt="Automatización Smart Home" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-700">
+            <div class="faq-item">
+                <button class="faq-btn" onclick="toggleFaq(this)">
+                    <span class="text-base font-light">¿Se puede motorizar cualquier persiana existente?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p class="pb-5 text-sm leading-relaxed" style="color:rgba(228,223,213,0.65)">En la gran mayoría de casos sí. Los motores tubulares son compatibles con prácticamente todos los sistemas de persiana enrollable. En la visita técnica gratuita evaluamos la viabilidad exacta y le damos presupuesto sin compromiso.</p>
                 </div>
-                <p class="mt-4 text-[10px] uppercase tracking-widest opacity-40">Automatización Smart Home</p>
             </div>
-            <div>
-                <div class="group overflow-hidden bg-gray-custom aspect-[3/4]">
-                    <img src="/assets/proyectos/IMG_5323.jpeg" alt="Instalación Premium Exterior" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-700">
+            <div class="faq-item">
+                <button class="faq-btn" onclick="toggleFaq(this)">
+                    <span class="text-base font-light">¿Qué es Matter 1.5 y por qué importa?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p class="pb-5 text-sm leading-relaxed" style="color:rgba(228,223,213,0.65)">Matter es el nuevo estándar universal de domótica apoyado por Apple, Google, Amazon y Samsung. Garantiza que todos sus dispositivos se comuniquen entre sí sin depender de una sola marca. Si cambia de iPhone a Android en el futuro, sus persianas seguirán funcionando igual.</p>
                 </div>
-                <p class="mt-4 text-[10px] uppercase tracking-widest opacity-40">Instalación Premium Exterior</p>
+            </div>
+            <div class="faq-item">
+                <button class="faq-btn" onclick="toggleFaq(this)">
+                    <span class="text-base font-light">¿Necesito obras o electricista?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p class="pb-5 text-sm leading-relaxed" style="color:rgba(228,223,213,0.65)">Los motores DC con batería integrada no necesitan conexión eléctrica — se cargan via USB-C o panel solar. Los motores AC sí requieren punto de luz, que gestionamos nosotros. En ningún caso hay que hacer obra.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-btn" onclick="toggleFaq(this)">
+                    <span class="text-base font-light">¿Qué garantía tienen los motores?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p class="pb-5 text-sm leading-relaxed" style="color:rgba(228,223,213,0.65)">Tier Esencial: 2 años. Tier Conectado: 2 años. Tier Smart Home: 3 años. Sistemas ABYS premium: hasta 5 años. En todos los casos incluimos soporte técnico post-instalación durante el período de garantía.</p>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Reviews -->
+<!-- ═══ FUNDADOR — NUEVO ═══ -->
 
-<section class="section-padding border-t border-white/5">
+<section class="section-pad bg-warm" style="border-top:1px solid rgba(201,169,110,0.15)">
     <div class="container mx-auto px-6">
-        <h2 class="text-4xl mb-16 italic text-center uppercase tracking-widest">Lo que dicen <span class="text-gold not-italic">nuestros clientes</span></h2>
-        <div class="grid md:grid-cols-3 gap-12">
-            <div class="reveal">
-                <div class="flex gap-1 text-gold mb-4">★★★★★</div>
-                <p class="text-sm italic opacity-70 mb-6">"He quedado muy satisfecho con la seriedad y profesionalidad de esta empresa. He confiado en ellos para motorizar unas persianas y han trabajado meticulosa y cuidadosamente. ¡Volveré!"</p>
-                <p class="text-[10px] uppercase tracking-widest font-bold">Sergio A. Fernández <span class="opacity-40 ml-2">Local Guide</span></p>
+        <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+            <!-- Photo -->
+            <div class="reveal founder-img-wrap">
+                <div style="border:1px solid rgba(201,169,110,0.2); overflow:hidden; aspect-ratio:3/4;">
+                    <img src="assets/team/viktor.jpg" alt="Viktor Slepov — Fundador Persianas Online Madrid"
+                         style="width:100%; height:100%; object-fit:cover; object-position:top center;">
+                </div>
             </div>
+            <!-- Text -->
             <div class="reveal">
-                <div class="flex gap-1 text-gold mb-4">★★★★★</div>
-                <p class="text-sm italic opacity-70 mb-6">"Presupuesto claro y transparente desde el primer momento. Buscaba la mejor solución para persiana de seguridad y ha sido un acierto. Muy recomendable."</p>
-                <p class="text-[10px] uppercase tracking-widest font-bold">José Caballero <span class="opacity-40 ml-2">Local Guide</span></p>
-            </div>
-            <div class="reveal">
-                <div class="flex gap-1 text-gold mb-4">★★★★★</div>
-                <p class="text-sm italic opacity-70 mb-6">"Muchas gracias a Víctor por su atención. El mejor precio del mercado con diferencia y una instalación impecable. Muy contenta con el resultado."</p>
-                <p class="text-[10px] uppercase tracking-widest font-bold">Silvia Lara González <span class="opacity-40 ml-2">Cliente Satisfecha</span></p>
+                <p class="text-[10px] uppercase tracking-[0.5em] mb-4" style="color:rgba(201,169,110,0.6)">Fundador</p>
+                <h2 class="text-5xl md:text-6xl italic mb-4">Viktor <span class="text-gold not-italic font-bold">Slepov</span></h2>
+                <div class="gold-line-left"></div>
+                <p class="text-base mb-6 leading-relaxed" style="color:rgba(228,223,213,0.75)">
+                    Más de 5 años especializándome en motorización y automatización de persianas en Madrid. Cada instalación la realizo personalmente — sin intermediarios, sin subcontratas.
+                </p>
+                <p class="text-sm mb-8 leading-relaxed italic" style="color:rgba(201,169,110,0.7); border-left:2px solid var(--gold); padding-left:16px;">
+                    "Diagnostico el problema por WhatsApp antes de venir. Así llego preparado y lo resuelvo en una sola visita."
+                </p>
+                <div class="flex flex-col gap-3">
+                    <a href="https://wa.me/34624420102" class="flex items-center gap-3 text-sm" style="color:#4ade80">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        WhatsApp: 624 420 102
+                    </a>
+                    <a href="tel:+34911674242" class="flex items-center gap-3 text-sm" style="color:rgba(228,223,213,0.6)">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                        911 67 42 42
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Zonas -->
+<!-- ═══ ZONAS ═══ -->
 
-<section class="section-padding bg-stone-900/30">
+<section class="py-16 bg-mid" style="border-top:1px solid rgba(201,169,110,0.15)">
     <div class="container mx-auto px-6">
-        <h3 class="text-center text-[10px] uppercase tracking-[0.5em] opacity-40 mb-12">Asistencia Técnica en Sur de Madrid</h3>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <a href="/getafe.html" class="p-6 border border-white/5 hover:border-gold transition text-center uppercase tracking-widest text-xs">Getafe</a>
-            <a href="/leganes.html" class="p-6 border border-white/5 hover:border-gold transition text-center uppercase tracking-widest text-xs">Leganés</a>
-            <a href="/fuenlabrada.html" class="p-6 border border-white/5 hover:border-gold transition text-center uppercase tracking-widest text-xs">Fuenlabrada</a>
-            <a href="/parla.html" class="p-6 border border-white/5 hover:border-gold transition text-center uppercase tracking-widest text-xs">Parla</a>
+        <p class="text-center text-[10px] uppercase tracking-[0.5em] mb-10" style="color:rgba(201,169,110,0.5)">Asistencia técnica en el Sur de Madrid</p>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
+            <a href="/getafe.html"      class="py-5 px-4 text-center uppercase tracking-widest text-sm hover:text-gold transition" style="border:1px solid rgba(201,169,110,0.2); color:rgba(228,223,213,0.6)">Getafe</a>
+            <a href="/leganes.html"     class="py-5 px-4 text-center uppercase tracking-widest text-sm hover:text-gold transition" style="border:1px solid rgba(201,169,110,0.2); color:rgba(228,223,213,0.6)">Leganés</a>
+            <a href="/fuenlabrada.html" class="py-5 px-4 text-center uppercase tracking-widest text-sm hover:text-gold transition" style="border:1px solid rgba(201,169,110,0.2); color:rgba(228,223,213,0.6)">Fuenlabrada</a>
+            <a href="/parla.html"       class="py-5 px-4 text-center uppercase tracking-widest text-sm hover:text-gold transition" style="border:1px solid rgba(201,169,110,0.2); color:rgba(228,223,213,0.6)">Parla</a>
         </div>
     </div>
 </section>
 
-<!-- Footer -->
+<!-- ═══ FOOTER ═══ -->
 
-<footer class="py-20 bg-dark border-t border-white/5 text-center">
-    <div class="container mx-auto px-6">
-        <h3 class="text-4xl md:text-6xl font-light mb-4 hover:text-gold transition"><a href="tel:+34911674242">911 67 42 42</a></h3>
-        <h3 class="text-4xl md:text-6xl font-light mb-12"><a href="tel:+34624420102" class="text-green-500 hover:text-green-400 transition">624 420 102</a></h3>
-        <p class="opacity-40 uppercase tracking-widest text-[10px] mb-12">Persianas Online, S.L. (Sociedad Unipersonal) · NIF B22655724 · Avenida Juan Carlos I, 38, Getafe (Madrid), 28905</p>
-        <div class="flex flex-wrap justify-center gap-8 mb-16">
-            <a href="/aviso-legal.html" class="opacity-40 hover:opacity-100 transition text-[10px] uppercase tracking-widest">Aviso Legal</a>
-            <a href="/privacidad.html" class="opacity-40 hover:opacity-100 transition text-[10px] uppercase tracking-widest">Privacidad</a>
-            <a href="/cookies.html" class="opacity-40 hover:opacity-100 transition text-[10px] uppercase tracking-widest">Cookies</a>
+<footer class="py-20" style="background:var(--dark); border-top:1px solid rgba(201,169,110,0.2)">
+    <div class="container mx-auto px-6 text-center">
+        <div class="mb-3">
+            <svg width="44" height="44" viewBox="0 0 36 36" fill="none" class="mx-auto mb-4"><rect x="1" y="1" width="34" height="34" stroke="#C9A96E" stroke-width="1.2"/><text x="18" y="24" font-family="Cormorant Garamond,serif" font-size="18" font-weight="700" fill="#C9A96E" text-anchor="middle">PO</text></svg>
         </div>
-        <p class="text-[9px] opacity-20 tracking-widest uppercase">© 2026 Persianas Online · Engineering Boutique</p>
+        <p class="text-[10px] uppercase tracking-[0.5em] mb-5" style="color:rgba(201,169,110,0.5)">Llámenos ahora</p>
+        <a href="tel:+34911674242" class="block text-4xl md:text-6xl font-light mb-3 hover:text-gold transition">911 67 42 42</a>
+        <a href="tel:+34624420102" class="block text-4xl md:text-6xl font-light mb-14 hover:opacity-80 transition" style="color:#4ade80">624 420 102</a>
+        <p class="text-[10px] uppercase tracking-widest mb-10" style="color:rgba(228,223,213,0.28)">Persianas Online, S.L. (Sociedad Unipersonal) · NIF B22655724 · Av. Juan Carlos I, 38 · Getafe (Madrid) 28905</p>
+        <div class="flex flex-wrap justify-center gap-8 mb-10">
+            <a href="/aviso-legal.html" class="text-[10px] uppercase tracking-widest hover:text-gold transition" style="color:rgba(228,223,213,0.3)">Aviso Legal</a>
+            <a href="/privacidad.html"  class="text-[10px] uppercase tracking-widest hover:text-gold transition" style="color:rgba(228,223,213,0.3)">Privacidad</a>
+            <a href="/cookies.html"     class="text-[10px] uppercase tracking-widest hover:text-gold transition" style="color:rgba(228,223,213,0.3)">Cookies</a>
+        </div>
+        <p class="text-[9px] uppercase tracking-widest" style="color:rgba(228,223,213,0.12)">© 2026 Persianas Online · Engineering Boutique · Madrid</p>
     </div>
 </footer>
 
-<!-- Cookie Banner -->
+<!-- ═══ MOBILE STICKY BAR ═══ -->
+
+<div class="mob-bar md:hidden" id="mob-bar">
+    <a href="tel:+34911674242" class="flex items-center justify-center gap-2 py-3 text-xs font-bold uppercase tracking-widest" style="background:var(--gray); color:var(--text)">
+        📞 911 67 42 42
+    </a>
+    <a href="https://wa.me/34624420102?text=Hola,%20quiero%20presupuesto." class="flex items-center justify-center gap-2 py-3 text-xs font-bold uppercase tracking-widest" style="background:#25D366; color:white">
+        💬 WhatsApp
+    </a>
+</div>
+
+<!-- ═══ COOKIE ═══ -->
 
 <div id="cookie-banner">
-    <div class="container mx-auto flex flex-col md:flex-row items-center gap-6 justify-between">
-        <p class="text-xs opacity-70 max-w-2xl">Usamos cookies técnicas necesarias y, con su consentimiento, cookies analíticas para mejorar nuestros servicios. Puede aceptar, rechazar o configurar su preferencia. Más información en nuestra <a href="/cookies.html" class="text-gold underline">Política de Cookies</a>.</p>
+    <div class="container mx-auto flex flex-col md:flex-row items-center gap-5 justify-between">
+        <p class="text-sm" style="color:rgba(228,223,213,0.7); max-width:36rem">Usamos cookies técnicas necesarias y, con su consentimiento, cookies analíticas. Más info en nuestra <a href="/cookies.html" class="text-gold underline">Política de Cookies</a>.</p>
         <div class="flex gap-3 flex-shrink-0">
             <button type="button" id="cookie-reject" class="btn-gold text-[10px]">Solo esenciales</button>
-            <button type="button" id="cookie-accept" class="bg-gold text-dark px-6 py-3 text-[10px] font-bold uppercase tracking-widest hover:bg-white transition">Aceptar todas</button>
+            <button type="button" id="cookie-accept" class="bg-gold text-dark px-6 py-3 text-[10px] font-bold uppercase tracking-widest hover:bg-white transition">Aceptar</button>
         </div>
     </div>
 </div>
 
 <script>
-    (function() {
-        let selectedType = null;
-        let selectedTier = null;
-        let selectedTierPrice = 0;
+(function(){
+    /* ── Calculadora ── */
+    let selType=null, selTier=null, selPrice=0;
+    const typeBtns=document.querySelectorAll('.type-btn');
+    const tierBtns=document.querySelectorAll('.tier-btn');
+    const tierSec=document.getElementById('tier-section');
+    const winRange=document.getElementById('window-range');
+    const winCount=document.getElementById('window-count');
+    const citySelect=document.getElementById('city-select');
+    const priceEl=document.getElementById('estimated-price');
+    const noteEl=document.getElementById('price-note');
+    const sendBtn=document.getElementById('send-whatsapp');
 
-        const typeButtons = document.querySelectorAll('.type-btn');
-        const tierButtons = document.querySelectorAll('.tier-btn');
-        const tierSection = document.getElementById('tier-section');
-        const windowRange = document.getElementById('window-range');
-        const windowCount = document.getElementById('window-count');
-        const citySelect = document.getElementById('city-select');
-        const priceDisplay = document.getElementById('estimated-price');
-        const priceNote = document.getElementById('price-note');
-        const sendButton = document.getElementById('send-whatsapp');
+    function fmt(n){ return n.toLocaleString('es-ES')+'€'; }
+    function updatePrice(){
+        const w=parseInt(winCount.innerText,10);
+        if(selType==='Reparación'){ priceEl.innerText='Desde 80€'; noteEl.innerText='Visita técnica + materiales según diagnóstico'; return; }
+        if(!selType||!selTier){ priceEl.innerText='—'; noteEl.innerText=!selType?'Seleccione servicio y tarifa':'Seleccione una tarifa'; return; }
+        priceEl.innerText=fmt(selPrice*w);
+        noteEl.innerText=`${selTier} · ${w} ventana${w===1?'':'s'} · Instalación incluida`;
+    }
+    function setType(t){ selType=t; typeBtns.forEach(b=>b.classList.toggle('active',b.dataset.type===t)); tierSec.style.display=t==='Reparación'?'none':'block'; updatePrice(); }
+    function setTier(t,p){ selTier=t; selPrice=p; tierBtns.forEach(b=>b.classList.toggle('active',b.dataset.tier===t)); updatePrice(); }
+    typeBtns.forEach(b=>b.addEventListener('click',()=>setType(b.dataset.type)));
+    tierBtns.forEach(b=>b.addEventListener('click',()=>setTier(b.dataset.tier,parseInt(b.dataset.price,10))));
+    winRange.addEventListener('input',e=>{ winCount.innerText=e.target.value; updatePrice(); });
+    sendBtn.addEventListener('click',()=>{
+        const w=winCount.innerText, city=citySelect.value;
+        if(!selType){ alert('Por favor, seleccione el servicio.'); return; }
+        let text;
+        if(selType==='Reparación'){ text=`Hola, necesito reparación de ${w} persiana${w==='1'?'':'s'} en ${city}. ¿Presupuesto?`; }
+        else{ if(!selTier){ alert('Por favor, seleccione una tarifa.'); return; } text=`Hola, quiero ${selType.toLowerCase()} ${w} ventana${w==='1'?'':'s'} en ${city}, tarifa ${selTier} (estimado ${fmt(selPrice*parseInt(w,10))}). ¿Me confirman presupuesto?`; }
+        window.open(`https://wa.me/34624420102?text=${encodeURIComponent(text)}`,'_blank');
+    });
+    setType('Motorización');
 
-        function formatEuro(amount) {
-            return amount.toLocaleString('es-ES') + '€';
-        }
+    /* ── Reveal ── */
+    const revealObs=new IntersectionObserver(entries=>entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('active'); }),{threshold:0.1});
+    document.querySelectorAll('.reveal').forEach(el=>revealObs.observe(el));
 
-        function updatePrice() {
-            const windows = parseInt(windowCount.innerText, 10);
-            if (selectedType === 'Reparación') {
-                priceDisplay.innerText = 'Desde 80€';
-                priceNote.innerText = 'Visita técnica + materiales según diagnóstico';
-                return;
-            }
-            if (!selectedType) {
-                priceDisplay.innerText = '—';
-                priceNote.innerText = 'Seleccione servicio y tarifa para ver el precio';
-                return;
-            }
-            if (!selectedTier) {
-                priceDisplay.innerText = '—';
-                priceNote.innerText = 'Seleccione una tarifa';
-                return;
-            }
-            const total = selectedTierPrice * windows;
-            priceDisplay.innerText = formatEuro(total);
-            priceNote.innerText = `${selectedTier} · ${windows} ventana${windows === 1 ? '' : 's'} · Instalación incluida`;
-        }
-
-        function setType(type) {
-            selectedType = type;
-            typeButtons.forEach(btn => btn.classList.toggle('active', btn.dataset.type === type));
-            tierSection.style.display = (type === 'Reparación') ? 'none' : 'block';
-            updatePrice();
-        }
-
-        function setTier(tier, price) {
-            selectedTier = tier;
-            selectedTierPrice = price;
-            tierButtons.forEach(btn => btn.classList.toggle('active', btn.dataset.tier === tier));
-            updatePrice();
-        }
-
-        typeButtons.forEach(btn => btn.addEventListener('click', () => setType(btn.dataset.type)));
-        tierButtons.forEach(btn => btn.addEventListener('click', () => setTier(btn.dataset.tier, parseInt(btn.dataset.price, 10))));
-        windowRange.addEventListener('input', (e) => {
-            windowCount.innerText = e.target.value;
-            updatePrice();
+    /* ── Animated counters ── */
+    const counterObs=new IntersectionObserver(entries=>{
+        entries.forEach(e=>{
+            if(!e.isIntersecting) return;
+            const el=e.target;
+            const target=parseInt(el.dataset.target,10);
+            const suffix=el.dataset.suffix||'';
+            const duration=1800;
+            const step=target/((duration/16));
+            let current=0;
+            const timer=setInterval(()=>{
+                current=Math.min(current+step,target);
+                el.innerText=Math.round(current)+suffix;
+                if(current>=target) clearInterval(timer);
+            },16);
+            counterObs.unobserve(el);
         });
+    },{threshold:0.4});
+    document.querySelectorAll('.counter-val').forEach(el=>counterObs.observe(el));
 
-        sendButton.addEventListener('click', () => {
-            const windows = windowCount.innerText;
-            const city = citySelect.value;
-            let text;
-            if (!selectedType) {
-                alert('Por favor, seleccione el servicio que necesita.');
-                return;
-            }
-            if (selectedType === 'Reparación') {
-                text = `Hola, necesito reparación de ${windows} persiana${windows === '1' ? '' : 's'} en ${city}. ¿Podrían enviarme presupuesto?`;
-            } else {
-                if (!selectedTier) {
-                    alert('Por favor, seleccione una tarifa.');
-                    return;
-                }
-                const total = selectedTierPrice * parseInt(windows, 10);
-                text = `Hola, quiero ${selectedType.toLowerCase()} ${windows} ventana${windows === '1' ? '' : 's'} en ${city}, tarifa ${selectedTier} (estimado ${formatEuro(total)}). ¿Podrían confirmarme el presupuesto?`;
-            }
-            window.open(`https://wa.me/34624420102?text=${encodeURIComponent(text)}`, '_blank');
-        });
+    /* ── FAQ ── */
+    window.toggleFaq=function(btn){
+        const answer=btn.nextElementSibling;
+        const icon=btn.querySelector('.faq-icon');
+        const isOpen=answer.classList.contains('open');
+        document.querySelectorAll('.faq-answer').forEach(a=>a.classList.remove('open'));
+        document.querySelectorAll('.faq-icon').forEach(i=>i.classList.remove('open'));
+        if(!isOpen){ answer.classList.add('open'); icon.classList.add('open'); }
+    };
 
-        setType('Motorización');
+    /* ── Mobile bar ── */
+    const mobBar=document.getElementById('mob-bar');
+    let lastY=0;
+    window.addEventListener('scroll',()=>{ const y=window.scrollY; if(y<100){ mobBar.style.display='grid'; } lastY=y; },{passive:true});
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) entry.target.classList.add('active');
-            });
-        }, { threshold: 0.1 });
-        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-        // Cookie banner
-        const CONSENT_KEY = 'po_cookie_consent';
-        function getCookie(name) {
-            const m = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
-            return m ? m[2] : null;
-        }
-        function setCookie(name, value, days) {
-            const expires = new Date(Date.now() + days * 864e5).toUTCString();
-            document.cookie = `${name}=${value}; expires=${expires}; path=/; SameSite=Lax`;
-        }
-        const banner = document.getElementById('cookie-banner');
-        if (!getCookie(CONSENT_KEY)) banner.classList.add('show');
-        document.getElementById('cookie-accept').addEventListener('click', () => {
-            setCookie(CONSENT_KEY, 'all', 365);
-            banner.classList.remove('show');
-        });
-        document.getElementById('cookie-reject').addEventListener('click', () => {
-            setCookie(CONSENT_KEY, 'essential', 365);
-            banner.classList.remove('show');
-        });
-    })();
+    /* ── Cookie ── */
+    const KEY='po_cookie_consent';
+    function gc(n){ const m=document.cookie.match(new RegExp('(^| )'+n+'=([^;]+)')); return m?m[2]:null; }
+    function sc(n,v,d){ document.cookie=`${n}=${v}; expires=${new Date(Date.now()+d*864e5).toUTCString()}; path=/; SameSite=Lax`; }
+    const banner=document.getElementById('cookie-banner');
+    if(!gc(KEY)) banner.classList.add('show');
+    document.getElementById('cookie-accept').addEventListener('click',()=>{ sc(KEY,'all',365); banner.classList.remove('show'); });
+    document.getElementById('cookie-reject').addEventListener('click',()=>{ sc(KEY,'essential',365); banner.classList.remove('show'); });
+})();
 </script>
 
 </body>
