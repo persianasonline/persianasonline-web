@@ -48,6 +48,37 @@
         font-weight: 700;
     }
 
+    /* Protocol badges */
+    .proto-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        border: 1px solid rgba(201,169,110,0.25);
+        padding: 8px 16px;
+        font-size: 10px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: rgba(255,255,255,0.5);
+        transition: all 0.3s ease;
+        white-space: nowrap;
+    }
+    .proto-badge:hover { border-color: var(--gold); color: var(--gold); }
+    .proto-badge .dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
+
+    /* Platform compatibility logos */
+    .platform-pill {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        padding: 6px 14px;
+        background: rgba(255,255,255,0.04);
+        border: 1px solid rgba(255,255,255,0.08);
+        font-size: 9px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: rgba(255,255,255,0.45);
+    }
+
     #cookie-banner {
         position: fixed;
         bottom: 0;
@@ -66,8 +97,8 @@
 </head>
 <body>
 
-```
 <!-- Header -->
+
 <nav class="fixed top-0 w-full p-8 flex justify-between items-center z-50 bg-black/50 backdrop-blur-md border-b border-white/5">
     <div class="flex flex-col">
         <a href="/" class="text-2xl font-bold tracking-[0.4em] text-gold uppercase">Persianas Online</a>
@@ -80,10 +111,11 @@
 </nav>
 
 <!-- Hero -->
+
 <section class="relative h-screen flex items-center justify-center overflow-hidden">
     <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80')] bg-cover bg-center scale-105 opacity-40"></div>
     <div class="absolute inset-0 hero-gradient"></div>
-    <div class="container mx-auto px-6 relative z-10 text-center">
+    <div class="container mx-auto px-6 relative z-10 text-center pt-24">
         <h1 class="text-6xl md:text-9xl mb-8 leading-none font-light italic">La alegría del precio pasa.<br><span class="text-gold not-italic font-bold">La calidad permanece.</span></h1>
         <p class="text-lg md:text-xl max-w-2xl mx-auto opacity-70 mb-12 font-light tracking-wide uppercase">Instalación técnica y motorización avanzada Matter 1.5 en Madrid.</p>
         <div class="flex flex-col md:flex-row justify-center gap-6">
@@ -94,24 +126,78 @@
 </section>
 
 <!-- Matter 1.5 -->
+
 <section class="section-padding bg-stone-900/20">
     <div class="container mx-auto px-6 grid md:grid-cols-2 gap-20 items-center">
         <div class="reveal">
-            <img src="/assets/persyvex_detail.png" alt="Tecnología Matter 1.5" class="w-full border border-white/5">
+            <img src="/assets/persyvex_detail.jpg" alt="Motor tubular DC con carga inalámbrica USB-C — Tecnología Matter 1.5" class="w-full border border-white/5">
         </div>
         <div class="reveal">
             <h2 class="text-5xl mb-8 italic">Tecnología <span class="text-gold not-italic font-bold">Matter 1.5</span></h2>
             <p class="text-lg opacity-60 font-light leading-relaxed mb-8">No instalamos simples motores. Implementamos ecosistemas. Con el nuevo estándar Matter 1.5, sus persianas se comunican de forma nativa con Apple Home, Google y Alexa sin puentes ni retrasos.</p>
             <ul class="space-y-4 mb-10">
-                <li class="flex items-center gap-4 text-sm uppercase tracking-widest opacity-80"><span class="w-2 h-2 bg-gold"></span> Respuesta instantánea &lt; 100ms</li>
-                <li class="flex items-center gap-4 text-sm uppercase tracking-widest opacity-80"><span class="w-2 h-2 bg-gold"></span> Silencio total &lt; 40dB (Motores AOK)</li>
-                <li class="flex items-center gap-4 text-sm uppercase tracking-widest opacity-80"><span class="w-2 h-2 bg-gold"></span> Control solar adaptativo por IA</li>
+                <li class="flex items-center gap-4 text-sm uppercase tracking-widest opacity-80"><span class="w-2 h-2 bg-gold flex-shrink-0"></span> Respuesta instantánea &lt; 100ms</li>
+                <li class="flex items-center gap-4 text-sm uppercase tracking-widest opacity-80"><span class="w-2 h-2 bg-gold flex-shrink-0"></span> Silencio total &lt; 22dB (motores coreless)</li>
+                <li class="flex items-center gap-4 text-sm uppercase tracking-widest opacity-80"><span class="w-2 h-2 bg-gold flex-shrink-0"></span> Carga solar o USB-C integrada</li>
+                <li class="flex items-center gap-4 text-sm uppercase tracking-widest opacity-80"><span class="w-2 h-2 bg-gold flex-shrink-0"></span> Control solar adaptativo por IA</li>
             </ul>
+
+```
+        <!-- Platform compatibility -->
+        <div class="mb-10">
+            <p class="text-[9px] uppercase tracking-[0.4em] opacity-30 mb-4">Compatible con</p>
+            <div class="flex flex-wrap gap-2">
+                <span class="platform-pill">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" class="opacity-60"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11"/></svg>
+                    Apple Home
+                </span>
+                <span class="platform-pill">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" class="opacity-60"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M8 12h8M12 8v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                    Google Home
+                </span>
+                <span class="platform-pill">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" class="opacity-60"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+                    Amazon Alexa
+                </span>
+                <span class="platform-pill">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" class="opacity-60"><rect x="2" y="2" width="9" height="9" rx="1"/><rect x="13" y="2" width="9" height="9" rx="1"/><rect x="2" y="13" width="9" height="9" rx="1"/><rect x="13" y="13" width="9" height="9" rx="1"/></svg>
+                    SmartThings
+                </span>
+            </div>
         </div>
+
+        <!-- Protocol row -->
+        <div>
+            <p class="text-[9px] uppercase tracking-[0.4em] opacity-30 mb-4">Protocolos instalados</p>
+            <div class="flex flex-wrap gap-2">
+                <span class="proto-badge"><span class="dot" style="background:#C9A96E"></span>Matter 1.5</span>
+                <span class="proto-badge"><span class="dot" style="background:#5B8CDB"></span>Zigbee</span>
+                <span class="proto-badge"><span class="dot" style="background:#4CAF50"></span>Wi-Fi</span>
+                <span class="proto-badge"><span class="dot" style="background:#2196F3"></span>Bluetooth</span>
+                <span class="proto-badge"><span class="dot" style="background:#9E9E9E"></span>RF 433</span>
+                <span class="proto-badge"><span class="dot" style="background:#FF5722"></span>KNX</span>
+            </div>
+        </div>
+    </div>
+</div>
+```
+
+</section>
+
+<!-- Ecosystem strip -->
+
+<section class="py-20 border-y border-white/5 overflow-hidden">
+    <div class="container mx-auto px-6">
+        <p class="text-center text-[9px] uppercase tracking-[0.5em] opacity-30 mb-12">Control desde cualquier dispositivo</p>
+        <div class="relative">
+            <img src="/assets/ecosystem_devices.png" alt="Control desde Mac, iPhone, iPad, Apple Watch, Amazon Echo y más" class="w-full max-w-4xl mx-auto block opacity-70 mix-blend-lighten">
+        </div>
+        <p class="text-center text-[9px] uppercase tracking-[0.4em] opacity-20 mt-8">Apple Home · Google Home · Amazon Alexa · Samsung SmartThings</p>
     </div>
 </section>
 
 <!-- Tarifas -->
+
 <section id="tarifas" class="section-padding border-y border-white/5">
     <div class="container mx-auto px-6">
         <div class="text-center mb-20">
@@ -120,69 +206,73 @@
         </div>
         <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
 
-            <div class="bg-gray-custom border border-white/10 p-10 flex flex-col">
-                <p class="text-[10px] uppercase tracking-[0.4em] opacity-40 mb-4">Tier 01</p>
-                <h3 class="text-4xl mb-2 italic font-light">Esencial</h3>
-                <p class="text-[10px] uppercase tracking-widest opacity-40 mb-8">Lexman Básico</p>
-                <div class="mb-8">
-                    <span class="text-5xl text-gold font-bold">279€</span>
-                    <span class="text-xs opacity-40 ml-2">por ventana</span>
-                </div>
-                <ul class="space-y-3 mb-10 flex-grow">
-                    <li class="flex items-start gap-3 text-sm opacity-70"><span class="text-gold mt-1">▸</span> Motor Lexman 20Nm certificado</li>
-                    <li class="flex items-start gap-3 text-sm opacity-70"><span class="text-gold mt-1">▸</span> Interruptor de pared incluido</li>
-                    <li class="flex items-start gap-3 text-sm opacity-70"><span class="text-gold mt-1">▸</span> Instalación técnica profesional</li>
-                    <li class="flex items-start gap-3 text-sm opacity-70"><span class="text-gold mt-1">▸</span> Garantía 2 años</li>
-                </ul>
-                <a href="https://wa.me/34624420102?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20el%20tier%20Esencial%20(279%E2%82%AC)." class="btn-gold w-full">Consultar</a>
+```
+        <div class="bg-gray-custom border border-white/10 p-10 flex flex-col">
+            <p class="text-[10px] uppercase tracking-[0.4em] opacity-40 mb-4">Tier 01</p>
+            <h3 class="text-4xl mb-2 italic font-light">Esencial</h3>
+            <p class="text-[10px] uppercase tracking-widest opacity-40 mb-8">Lexman Básico</p>
+            <div class="mb-8">
+                <span class="text-5xl text-gold font-bold">279€</span>
+                <span class="text-xs opacity-40 ml-2">por ventana</span>
             </div>
-
-            <div class="bg-gray-custom border-2 p-10 flex flex-col tier-card-featured">
-                <p class="text-[10px] uppercase tracking-[0.4em] text-gold mb-4">Tier 02</p>
-                <h3 class="text-4xl mb-2 italic font-light">Conectado</h3>
-                <p class="text-[10px] uppercase tracking-widest opacity-40 mb-8">Lexman + App Móvil</p>
-                <div class="mb-8">
-                    <span class="text-5xl text-gold font-bold">355€</span>
-                    <span class="text-xs opacity-40 ml-2">por ventana</span>
-                </div>
-                <ul class="space-y-3 mb-10 flex-grow">
-                    <li class="flex items-start gap-3 text-sm opacity-80"><span class="text-gold mt-1">▸</span> Motor Lexman Smart</li>
-                    <li class="flex items-start gap-3 text-sm opacity-80"><span class="text-gold mt-1">▸</span> Control por app móvil iOS / Android</li>
-                    <li class="flex items-start gap-3 text-sm opacity-80"><span class="text-gold mt-1">▸</span> Programación horaria ilimitada</li>
-                    <li class="flex items-start gap-3 text-sm opacity-80"><span class="text-gold mt-1">▸</span> Instalación y configuración</li>
-                    <li class="flex items-start gap-3 text-sm opacity-80"><span class="text-gold mt-1">▸</span> Garantía 2 años</li>
-                </ul>
-                <a href="https://wa.me/34624420102?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20el%20tier%20Conectado%20(355%E2%82%AC)." class="bg-gold text-dark py-3 px-6 text-xs font-bold uppercase tracking-widest text-center hover:bg-white transition">Consultar</a>
-            </div>
-
-            <div class="bg-gray-custom border border-white/10 p-10 flex flex-col">
-                <p class="text-[10px] uppercase tracking-[0.4em] opacity-40 mb-4">Tier 03</p>
-                <h3 class="text-4xl mb-2 italic font-light">Smart Home</h3>
-                <p class="text-[10px] uppercase tracking-widest opacity-40 mb-8">Matter-Ready · Voz</p>
-                <div class="mb-8">
-                    <span class="text-5xl text-gold font-bold">625€</span>
-                    <span class="text-xs opacity-40 ml-2">por ventana</span>
-                </div>
-                <ul class="space-y-3 mb-10 flex-grow">
-                    <li class="flex items-start gap-3 text-sm opacity-70"><span class="text-gold mt-1">▸</span> Motor premium Matter-ready</li>
-                    <li class="flex items-start gap-3 text-sm opacity-70"><span class="text-gold mt-1">▸</span> Control por voz Alexa / Google / Siri</li>
-                    <li class="flex items-start gap-3 text-sm opacity-70"><span class="text-gold mt-1">▸</span> Integración Apple Home / Google Home</li>
-                    <li class="flex items-start gap-3 text-sm opacity-70"><span class="text-gold mt-1">▸</span> Control adaptativo solar</li>
-                    <li class="flex items-start gap-3 text-sm opacity-70"><span class="text-gold mt-1">▸</span> Compatible Shelly 2.5</li>
-                    <li class="flex items-start gap-3 text-sm opacity-70"><span class="text-gold mt-1">▸</span> Garantía 3 años</li>
-                </ul>
-                <a href="https://wa.me/34624420102?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20el%20tier%20Smart%20Home%20(625%E2%82%AC)." class="btn-gold w-full">Consultar</a>
-            </div>
+            <ul class="space-y-3 mb-10 flex-grow">
+                <li class="flex items-start gap-3 text-sm opacity-70"><span class="text-gold mt-1">▸</span> Motor Lexman 20Nm certificado</li>
+                <li class="flex items-start gap-3 text-sm opacity-70"><span class="text-gold mt-1">▸</span> Interruptor de pared incluido</li>
+                <li class="flex items-start gap-3 text-sm opacity-70"><span class="text-gold mt-1">▸</span> Instalación técnica profesional</li>
+                <li class="flex items-start gap-3 text-sm opacity-70"><span class="text-gold mt-1">▸</span> Garantía 2 años</li>
+            </ul>
+            <a href="https://wa.me/34624420102?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20el%20tier%20Esencial%20(279%E2%82%AC)." class="btn-gold w-full">Consultar</a>
         </div>
 
-        <div class="text-center mt-16 max-w-3xl mx-auto">
-            <p class="text-sm opacity-60 font-light leading-relaxed">¿Busca la gama premium? Para instalaciones <span class="text-gold">ABYS Smart Matter 1.5 nativo (499–850€)</span> o sistemas profesionales <span class="text-gold">Somfy Animeo / KNX</span>, consulte directamente con nuestro equipo técnico.</p>
-            <a href="https://wa.me/34624420102?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20instalaciones%20premium%20Matter%201.5%20o%20Somfy/KNX." class="inline-block mt-6 text-[10px] uppercase tracking-[0.4em] text-gold border-b border-gold pb-1 hover:opacity-70 transition">Contactar técnico →</a>
+        <div class="bg-gray-custom border-2 p-10 flex flex-col tier-card-featured">
+            <p class="text-[10px] uppercase tracking-[0.4em] text-gold mb-4">Tier 02</p>
+            <h3 class="text-4xl mb-2 italic font-light">Conectado</h3>
+            <p class="text-[10px] uppercase tracking-widest opacity-40 mb-8">Lexman + App Móvil</p>
+            <div class="mb-8">
+                <span class="text-5xl text-gold font-bold">355€</span>
+                <span class="text-xs opacity-40 ml-2">por ventana</span>
+            </div>
+            <ul class="space-y-3 mb-10 flex-grow">
+                <li class="flex items-start gap-3 text-sm opacity-80"><span class="text-gold mt-1">▸</span> Motor Lexman Smart</li>
+                <li class="flex items-start gap-3 text-sm opacity-80"><span class="text-gold mt-1">▸</span> Control por app móvil iOS / Android</li>
+                <li class="flex items-start gap-3 text-sm opacity-80"><span class="text-gold mt-1">▸</span> Programación horaria ilimitada</li>
+                <li class="flex items-start gap-3 text-sm opacity-80"><span class="text-gold mt-1">▸</span> Instalación y configuración</li>
+                <li class="flex items-start gap-3 text-sm opacity-80"><span class="text-gold mt-1">▸</span> Garantía 2 años</li>
+            </ul>
+            <a href="https://wa.me/34624420102?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20el%20tier%20Conectado%20(355%E2%82%AC)." class="bg-gold text-dark py-3 px-6 text-xs font-bold uppercase tracking-widest text-center hover:bg-white transition">Consultar</a>
+        </div>
+
+        <div class="bg-gray-custom border border-white/10 p-10 flex flex-col">
+            <p class="text-[10px] uppercase tracking-[0.4em] opacity-40 mb-4">Tier 03</p>
+            <h3 class="text-4xl mb-2 italic font-light">Smart Home</h3>
+            <p class="text-[10px] uppercase tracking-widest opacity-40 mb-8">Matter-Ready · Voz</p>
+            <div class="mb-8">
+                <span class="text-5xl text-gold font-bold">625€</span>
+                <span class="text-xs opacity-40 ml-2">por ventana</span>
+            </div>
+            <ul class="space-y-3 mb-10 flex-grow">
+                <li class="flex items-start gap-3 text-sm opacity-70"><span class="text-gold mt-1">▸</span> Motor premium Matter-ready</li>
+                <li class="flex items-start gap-3 text-sm opacity-70"><span class="text-gold mt-1">▸</span> Control por voz Alexa / Google / Siri</li>
+                <li class="flex items-start gap-3 text-sm opacity-70"><span class="text-gold mt-1">▸</span> Integración Apple Home / Google Home</li>
+                <li class="flex items-start gap-3 text-sm opacity-70"><span class="text-gold mt-1">▸</span> Control adaptativo solar</li>
+                <li class="flex items-start gap-3 text-sm opacity-70"><span class="text-gold mt-1">▸</span> Compatible Shelly 2.5</li>
+                <li class="flex items-start gap-3 text-sm opacity-70"><span class="text-gold mt-1">▸</span> Garantía 3 años</li>
+            </ul>
+            <a href="https://wa.me/34624420102?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20el%20tier%20Smart%20Home%20(625%E2%82%AC)." class="btn-gold w-full">Consultar</a>
         </div>
     </div>
+
+    <div class="text-center mt-16 max-w-3xl mx-auto">
+        <p class="text-sm opacity-60 font-light leading-relaxed">¿Busca la gama premium? Para instalaciones <span class="text-gold">ABYS Smart Matter 1.5 nativo (499–850€)</span> o sistemas profesionales <span class="text-gold">Somfy Animeo / KNX</span>, consulte directamente con nuestro equipo técnico.</p>
+        <a href="https://wa.me/34624420102?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20instalaciones%20premium%20Matter%201.5%20o%20Somfy/KNX." class="inline-block mt-6 text-[10px] uppercase tracking-[0.4em] text-gold border-b border-gold pb-1 hover:opacity-70 transition">Contactar técnico →</a>
+    </div>
+</div>
+```
+
 </section>
 
 <!-- Ahorro -->
+
 <section class="section-padding border-b border-white/5">
     <div class="container mx-auto px-6 text-center">
         <h2 class="text-5xl md:text-7xl mb-12 italic">Su casa se <span class="text-gold not-italic font-bold">paga sola.</span></h2>
@@ -203,6 +293,7 @@
 </section>
 
 <!-- Calculadora -->
+
 <section id="calculadora" class="section-padding bg-stone-900/10">
     <div class="container mx-auto px-6 max-w-2xl">
         <div class="text-center mb-12">
@@ -211,83 +302,87 @@
         </div>
         <div class="bg-gray-custom p-8 md:p-12 border border-white/5 space-y-10">
 
-            <div>
-                <label class="block text-[10px] uppercase tracking-widest opacity-40 mb-6">¿Qué servicio necesita?</label>
-                <div class="grid grid-cols-3 gap-4">
-                    <button type="button" data-type="Reparación" class="type-btn p-4 border border-white/10 text-[10px] uppercase tracking-widest hover:border-gold transition">Reparar</button>
-                    <button type="button" data-type="Motorización" class="type-btn p-4 border border-white/10 text-[10px] uppercase tracking-widest hover:border-gold transition">Motorizar</button>
-                    <button type="button" data-type="Instalación" class="type-btn p-4 border border-white/10 text-[10px] uppercase tracking-widest hover:border-gold transition">Instalar</button>
-                </div>
+```
+        <div>
+            <label class="block text-[10px] uppercase tracking-widest opacity-40 mb-6">¿Qué servicio necesita?</label>
+            <div class="grid grid-cols-3 gap-4">
+                <button type="button" data-type="Reparación" class="type-btn p-4 border border-white/10 text-[10px] uppercase tracking-widest hover:border-gold transition">Reparar</button>
+                <button type="button" data-type="Motorización" class="type-btn p-4 border border-white/10 text-[10px] uppercase tracking-widest hover:border-gold transition">Motorizar</button>
+                <button type="button" data-type="Instalación" class="type-btn p-4 border border-white/10 text-[10px] uppercase tracking-widest hover:border-gold transition">Instalar</button>
             </div>
-
-            <div id="tier-section">
-                <label class="block text-[10px] uppercase tracking-widest opacity-40 mb-6">Tarifa</label>
-                <div class="grid grid-cols-3 gap-4">
-                    <button type="button" data-tier="Esencial" data-price="279" class="tier-btn p-4 border border-white/10 text-[10px] uppercase tracking-widest hover:border-gold transition flex flex-col gap-1">
-                        <span>Esencial</span>
-                        <span class="text-gold font-bold">279€</span>
-                    </button>
-                    <button type="button" data-tier="Conectado" data-price="355" class="tier-btn p-4 border border-white/10 text-[10px] uppercase tracking-widest hover:border-gold transition flex flex-col gap-1">
-                        <span>Conectado</span>
-                        <span class="text-gold font-bold">355€</span>
-                    </button>
-                    <button type="button" data-tier="Smart Home" data-price="625" class="tier-btn p-4 border border-white/10 text-[10px] uppercase tracking-widest hover:border-gold transition flex flex-col gap-1">
-                        <span>Smart Home</span>
-                        <span class="text-gold font-bold">625€</span>
-                    </button>
-                </div>
-            </div>
-
-            <div>
-                <div class="text-[10px] uppercase tracking-widest opacity-40 mb-6 flex justify-between">
-                    <span>Número de ventanas</span>
-                    <span id="window-count" class="text-gold">1</span>
-                </div>
-                <input type="range" min="1" max="15" value="1" id="window-range" class="w-full h-1 bg-white/10 appearance-none cursor-pointer accent-gold">
-            </div>
-
-            <div>
-                <label class="block text-[10px] uppercase tracking-widest opacity-40 mb-6" for="city-select">Ubicación</label>
-                <select id="city-select" class="w-full bg-transparent border-b border-white/10 py-2 text-sm focus:outline-none focus:border-gold">
-                    <option value="Madrid Capital" class="bg-dark">Madrid Capital</option>
-                    <option value="Getafe" class="bg-dark">Getafe</option>
-                    <option value="Leganés" class="bg-dark">Leganés</option>
-                    <option value="Fuenlabrada" class="bg-dark">Fuenlabrada</option>
-                    <option value="Parla" class="bg-dark">Parla</option>
-                </select>
-            </div>
-
-            <div class="border-t border-white/10 pt-8">
-                <p class="text-[10px] uppercase tracking-widest opacity-40 mb-3">Estimación</p>
-                <p id="estimated-price" class="text-4xl text-gold font-bold">—</p>
-                <p id="price-note" class="text-xs opacity-40 mt-2 italic">Seleccione servicio y tarifa para ver el precio</p>
-            </div>
-
-            <button type="button" id="send-whatsapp" class="w-full bg-gold text-dark py-5 text-xs font-bold uppercase tracking-[0.3em] hover:bg-white transition">Solicitar Presupuesto por WhatsApp</button>
         </div>
+
+        <div id="tier-section">
+            <label class="block text-[10px] uppercase tracking-widest opacity-40 mb-6">Tarifa</label>
+            <div class="grid grid-cols-3 gap-4">
+                <button type="button" data-tier="Esencial" data-price="279" class="tier-btn p-4 border border-white/10 text-[10px] uppercase tracking-widest hover:border-gold transition flex flex-col gap-1">
+                    <span>Esencial</span>
+                    <span class="text-gold font-bold">279€</span>
+                </button>
+                <button type="button" data-tier="Conectado" data-price="355" class="tier-btn p-4 border border-white/10 text-[10px] uppercase tracking-widest hover:border-gold transition flex flex-col gap-1">
+                    <span>Conectado</span>
+                    <span class="text-gold font-bold">355€</span>
+                </button>
+                <button type="button" data-tier="Smart Home" data-price="625" class="tier-btn p-4 border border-white/10 text-[10px] uppercase tracking-widest hover:border-gold transition flex flex-col gap-1">
+                    <span>Smart Home</span>
+                    <span class="text-gold font-bold">625€</span>
+                </button>
+            </div>
+        </div>
+
+        <div>
+            <div class="text-[10px] uppercase tracking-widest opacity-40 mb-6 flex justify-between">
+                <span>Número de ventanas</span>
+                <span id="window-count" class="text-gold">1</span>
+            </div>
+            <input type="range" min="1" max="15" value="1" id="window-range" class="w-full h-1 bg-white/10 appearance-none cursor-pointer accent-gold">
+        </div>
+
+        <div>
+            <label class="block text-[10px] uppercase tracking-widest opacity-40 mb-6" for="city-select">Ubicación</label>
+            <select id="city-select" class="w-full bg-transparent border-b border-white/10 py-2 text-sm focus:outline-none focus:border-gold">
+                <option value="Madrid Capital" class="bg-dark">Madrid Capital</option>
+                <option value="Getafe" class="bg-dark">Getafe</option>
+                <option value="Leganés" class="bg-dark">Leganés</option>
+                <option value="Fuenlabrada" class="bg-dark">Fuenlabrada</option>
+                <option value="Parla" class="bg-dark">Parla</option>
+            </select>
+        </div>
+
+        <div class="border-t border-white/10 pt-8">
+            <p class="text-[10px] uppercase tracking-widest opacity-40 mb-3">Estimación</p>
+            <p id="estimated-price" class="text-4xl text-gold font-bold">—</p>
+            <p id="price-note" class="text-xs opacity-40 mt-2 italic">Seleccione servicio y tarifa para ver el precio</p>
+        </div>
+
+        <button type="button" id="send-whatsapp" class="w-full bg-gold text-dark py-5 text-xs font-bold uppercase tracking-[0.3em] hover:bg-white transition">Solicitar Presupuesto por WhatsApp</button>
     </div>
+</div>
+```
+
 </section>
 
 <!-- Portfolio -->
+
 <section class="section-padding">
     <div class="container mx-auto px-6">
         <h2 class="text-4xl md:text-6xl mb-16 italic text-center">Nuestros proyectos en <span class="text-gold not-italic">Madrid</span></h2>
         <div class="grid md:grid-cols-3 gap-6">
             <div>
                 <div class="group overflow-hidden bg-gray-custom aspect-[3/4]">
-                    <img src="/assets/proyectos/obra_1.jpg" alt="Integración Matter 1.5" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-700">
+                    <img src="/assets/proyectos/IMG_5408.jpeg" alt="Integración Matter 1.5" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-700">
                 </div>
                 <p class="mt-4 text-[10px] uppercase tracking-widest opacity-40">Integración Matter 1.5</p>
             </div>
             <div>
                 <div class="group overflow-hidden bg-gray-custom aspect-[3/4]">
-                    <img src="/assets/proyectos/obra_2.jpg" alt="Automatización Smart Home" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-700">
+                    <img src="/assets/proyectos/IMG_6898.jpeg" alt="Automatización Smart Home" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-700">
                 </div>
                 <p class="mt-4 text-[10px] uppercase tracking-widest opacity-40">Automatización Smart Home</p>
             </div>
             <div>
                 <div class="group overflow-hidden bg-gray-custom aspect-[3/4]">
-                    <img src="/assets/proyectos/obra_3.jpg" alt="Instalación Premium Exterior" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-700">
+                    <img src="/assets/proyectos/IMG_5323.jpeg" alt="Instalación Premium Exterior" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-700">
                 </div>
                 <p class="mt-4 text-[10px] uppercase tracking-widest opacity-40">Instalación Premium Exterior</p>
             </div>
@@ -296,6 +391,7 @@
 </section>
 
 <!-- Reviews -->
+
 <section class="section-padding border-t border-white/5">
     <div class="container mx-auto px-6">
         <h2 class="text-4xl mb-16 italic text-center uppercase tracking-widest">Lo que dicen <span class="text-gold not-italic">nuestros clientes</span></h2>
@@ -320,6 +416,7 @@
 </section>
 
 <!-- Zonas -->
+
 <section class="section-padding bg-stone-900/30">
     <div class="container mx-auto px-6">
         <h3 class="text-center text-[10px] uppercase tracking-[0.5em] opacity-40 mb-12">Asistencia Técnica en Sur de Madrid</h3>
@@ -333,9 +430,11 @@
 </section>
 
 <!-- Footer -->
+
 <footer class="py-20 bg-dark border-t border-white/5 text-center">
     <div class="container mx-auto px-6">
-        <h3 class="text-4xl md:text-6xl font-light mb-8 hover:text-gold transition"><a href="tel:+34911674242">911 67 42 42</a></h3>
+        <h3 class="text-4xl md:text-6xl font-light mb-4 hover:text-gold transition"><a href="tel:+34911674242">911 67 42 42</a></h3>
+        <h3 class="text-4xl md:text-6xl font-light mb-12"><a href="tel:+34624420102" class="text-green-500 hover:text-green-400 transition">624 420 102</a></h3>
         <p class="opacity-40 uppercase tracking-widest text-[10px] mb-12">Persianas Online, S.L. (Sociedad Unipersonal) · NIF B22655724 · Avenida Juan Carlos I, 38, Getafe (Madrid), 28905</p>
         <div class="flex flex-wrap justify-center gap-8 mb-16">
             <a href="/aviso-legal.html" class="opacity-40 hover:opacity-100 transition text-[10px] uppercase tracking-widest">Aviso Legal</a>
@@ -347,6 +446,7 @@
 </footer>
 
 <!-- Cookie Banner -->
+
 <div id="cookie-banner">
     <div class="container mx-auto flex flex-col md:flex-row items-center gap-6 justify-between">
         <p class="text-xs opacity-70 max-w-2xl">Usamos cookies técnicas necesarias y, con su consentimiento, cookies analíticas para mejorar nuestros servicios. Puede aceptar, rechazar o configurar su preferencia. Más información en nuestra <a href="/cookies.html" class="text-gold underline">Política de Cookies</a>.</p>
@@ -379,7 +479,6 @@
 
         function updatePrice() {
             const windows = parseInt(windowCount.innerText, 10);
-
             if (selectedType === 'Reparación') {
                 priceDisplay.innerText = 'Desde 80€';
                 priceNote.innerText = 'Visita técnica + materiales según diagnóstico';
@@ -395,7 +494,6 @@
                 priceNote.innerText = 'Seleccione una tarifa';
                 return;
             }
-
             const total = selectedTierPrice * windows;
             priceDisplay.innerText = formatEuro(total);
             priceNote.innerText = `${selectedTier} · ${windows} ventana${windows === 1 ? '' : 's'} · Instalación incluida`;
@@ -426,7 +524,6 @@
             const windows = windowCount.innerText;
             const city = citySelect.value;
             let text;
-
             if (!selectedType) {
                 alert('Por favor, seleccione el servicio que necesita.');
                 return;
@@ -475,7 +572,6 @@
         });
     })();
 </script>
-```
 
 </body>
 </html>
