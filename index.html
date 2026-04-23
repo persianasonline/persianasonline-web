@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Instalación técnica y motorización avanzada de persianas Matter 1.5 en Madrid. Persianas Online — Engineering Boutique. Desde 279€ por ventana.">
+    <title>Persianas Online | Motorización Inteligente Madrid | Desde 279€</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root { --gold: #C9A96E; --dark: #080808; --gray: #1a1a1a; }
+        body { background-color: var(--dark); color: white; font-family: 'Jost', sans-serif; overflow-x: hidden; }
+        h1, h2, h3 { font-family: 'Cormorant Garamond', serif; }
+
+```
+    .text-gold { color: var(--gold); }
+    .bg-gold { background-color: var(--gold); }
+    .border-gold { border-color: var(--gold); }
+    .text-dark { color: var(--dark); }
+    .bg-dark { background-color: var(--dark); }
+    .bg-gray-custom { background-color: var(--gray); }
+
+    .hero-gradient { background: linear-gradient(to bottom, rgba(8,8,8,0.3), rgba(8,8,8,1)); }
+    .btn-gold { border: 1px solid var(--gold); color: var(--gold); padding: 12px 30px; transition: all 0.3s ease; text-transform: uppercase; letter-spacing: 2px; font-size: 0.75rem; font-weight: 600; display: inline-block; text-align: center; }
+    .btn-gold:hover { background: var(--gold); color: var(--dark); }
+
+    .section-padding { padding: 120px 0; }
+    .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+    .reveal.active { opacity: 1; transform: translateY(0); }
+
+    .type-btn.active, .tier-btn.active { border-color: var(--gold); color: var(--gold); }
+
+    .tier-card-featured { border-color: var(--gold); position: relative; }
+    .tier-card-featured::before {
+        content: 'RECOMENDADO';
+        position: absolute;
+        top: -12px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: var(--gold);
+        color: var(--dark);
+        padding: 4px 16px;
+        font-size: 10px;
+        letter-spacing: 3px;
+        font-weight: 700;
+    }
+
+    #cookie-banner {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: var(--gray);
+        border-top: 1px solid var(--gold);
+        padding: 20px;
+        z-index: 100;
+        display: none;
+    }
+    #cookie-banner.show { display: block; }
+</style>
+```
+
+</head>
+<body>
+
+```
+<!-- Header -->
+<nav class="fixed top-0 w-full p-8 flex justify-between items-center z-50 bg-black/50 backdrop-blur-md border-b border-white/5">
+    <div class="flex flex-col">
+        <a href="/" class="text-2xl font-bold tracking-[0.4em] text-gold uppercase">Persianas Online</a>
+        <span class="text-[9px] tracking-[0.6em] uppercase opacity-40">Engineering Boutique · Madrid</span>
+    </div>
+    <div class="hidden md:flex flex-col items-end">
+        <a href="tel:+34911674242" class="text-sm font-bold tracking-widest">911 67 42 42</a>
+        <a href="https://wa.me/34624420102?text=Hola,%20quiero%20presupuesto%20para%20motorizar%20mis%20persianas." class="text-[10px] text-green-500 font-bold uppercase tracking-widest">WhatsApp: 624 420 102</a>
+    </div>
+</nav>
+
+<!-- Hero -->
+<section class="relative h-screen flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80')] bg-cover bg-center scale-105 opacity-40"></div>
+    <div class="absolute inset-0 hero-gradient"></div>
+    <div class="container mx-auto px-6 relative z-10 text-center">
+        <h1 class="text-6xl md:text-9xl mb-8 leading-none font-light italic">La alegría del precio pasa.<br><span class="text-gold not-italic font-bold">La calidad permanece.</span></h1>
+        <p class="text-lg md:text-xl max-w-2xl mx-auto opacity-70 mb-12 font-light tracking-wide uppercase">Instalación técnica y motorización avanzada Matter 1.5 en Madrid.</p>
+        <div class="flex flex-col md:flex-row justify-center gap-6">
+            <a href="#tarifas" class="bg-gold text-dark px-10 py-4 text-xs font-bold uppercase tracking-widest transition hover:bg-white">Ver Tarifas</a>
+            <a href="#calculadora" class="btn-gold">Calcular Presupuesto</a>
+        </div>
+    </div>
+</section>
+
+<!-- Matter 1.5 -->
+<section class="section-padding bg-stone-900/20">
+    <div class="container mx-auto px-6 grid md:grid-cols-2 gap-20 items-center">
+        <div class="reveal">
+            <img src="/assets/persyvex_detail.png" alt="Tecnología Matter 1.5" class="w-full border border-white/5">
+        </div>
+        <div class="reveal">
+            <h2 class="text-5xl mb-8 italic">Tecnología <span class="text-gold not-italic font-bold">Matter 1.5</span></h2>
+            <p class="text-lg opacity-60 font-light leading-relaxed mb-8">No instalamos simples motores. Implementamos ecosistemas. Con el nuevo estándar Matter 1.5, sus persianas se comunican de forma nativa con Apple Home, Google y Alexa sin puentes ni retrasos.</p>
+            <ul class="space-y-4 mb-10">
+                <li class="flex items-center gap-4 text-sm uppercase tracking-widest opacity-80"><span class="w-2 h-2 bg-gold"></span> Respuesta instantánea &lt; 100ms</li>
+                <li class="flex items-center gap-4 text-sm uppercase tracking-widest opacity-80"><span class="w-2 h-2 bg-gold"></span> Silencio total &lt; 40dB (Motores AOK)</li>
+                <li class="flex items-center gap-4 text-sm uppercase tracking-widest opacity-80"><span class="w-2 h-2 bg-gold"></span> Control solar adaptativo por IA</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Tarifas -->
+<section id="tarifas" class="section-padding border-y border-white/5">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-20">
+            <h2 class="text-5xl md:text-7xl mb-6 italic">Tarifas <span class="text-gold not-italic font-bold">transparentes</span></h2>
+            <p class="text-sm uppercase tracking-[0.3em] opacity-40">Precio por ventana · Instalación técnica incluida</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+            <div class="bg-gray-custom border border-white/10 p-10 flex flex-col">
+                <p class="text-[10px] uppercase tracking-[0.4em] opacity-40 mb-4">Tier 01</p>
+                <h3 class="text-4xl mb-2 italic font-light">Esencial</h3>
+                <p class="text-[10px] uppercase tracking-widest opacity-40 mb-8">Lexman Básico</p>
+                <div class="mb-8">
+                    <span class="text-5xl text-gold font-bold">279€</span>
+                    <span class="text-xs opacity-40 ml-2">por ventana</span>
+                </div>
+                <ul class="space-y-3 mb-10 flex-grow">
+                    <li class="flex items-start gap-3 text-sm opacity-70"><span class="text-gold mt-1">▸</span> Motor Lexman 20Nm certificado</li>
+                    <li class="flex items-start gap-3 text-sm opacity-70"><span class="text-gold mt-1">▸</span> Interruptor de pared incluido</li>
+                    <li class="flex items-start gap-3 text-sm opacity-70"><span class="text-gold mt-1">▸</span> Instalación técnica profesional</li>
+                    <li class="flex items-start gap-3 text-sm opacity-70"><span class="text-gold mt-1">▸</span> Garantía 2 años</li>
+                </ul>
+                <a href="https://wa.me/34624420102?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20el%20tier%20Esencial%20(279%E2%82%AC)." class="btn-gold w-full">Consultar</a>
+            </div>
+
+            <div class="bg-gray-custom border-2 p-10 flex flex-col tier-card-featured">
+                <p class="text-[10px] uppercase tracking-[0.4em] text-gold mb-4">Tier 02</p>
+                <h3 class="text-4xl mb-2 italic font-light">Conectado</h3>
+                <p class="text-[10px] uppercase tracking-widest opacity-40 mb-8">Lexman + App Móvil</p>
+                <div class="mb-8">
+                    <span class="text-5xl text-gold font-bold">355€</span>
+                    <span class="text-xs opacity-40 ml-2">por ventana</span>
+                </div>
+                <ul class="space-y-3 mb-10 flex-grow">
+                    <li class="flex items-start gap-3 text-sm opacity-80"><span class="text-gold mt-1">▸</span> Motor Lexman Smart</li>
+                    <li class="flex items-start gap-3 text-sm opacity-80"><span class="text-gold mt-1">▸</span> Control por app móvil iOS / Android</li>
+                    <li class="flex items-start gap-3 text-sm opacity-80"><span class="text-gold mt-1">▸</span> Programación horaria ilimitada</li>
+                    <li class="flex items-start gap-3 text-sm opacity-80"><span class="text-gold mt-1">▸</span> Instalación y configuración</li>
+                    <li class="flex items-start gap-3 text-sm opacity-80"><span class="text-gold mt-1">▸</span> Garantía 2 años</li>
+                </ul>
+                <a href="https://wa.me/34624420102?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20el%20tier%20Conectado%20(355%E2%82%AC)." class="bg-gold text-dark py-3 px-6 text-xs font-bold uppercase tracking-widest text-center hover:bg-white transition">Consultar</a>
+            </div>
+
+            <div class="bg-gray-custom border border-white/10 p-10 flex flex-col">
+                <p class="text-[10px] uppercase tracking-[0.4em] opacity-40 mb-4">Tier 03</p>
+                <h3 class="text-4xl mb-2 italic font-light">Smart Home</h3>
+                <p class="text-[10px] uppercase tracking-widest opacity-40 mb-8">Matter-Ready · Voz</p>
+                <div class="mb-8">
+                    <span class="text-5xl text-gold font-bold">625€</span>
+                    <span class="text-xs opacity-40 ml-2">por ventana</span>
+                </div>
+                <ul class="space-y-3 mb-10 flex-grow">
+                    <li class="flex items-start gap-3 text-sm opacity-70"><span class="text-gold mt-1">▸</span> Motor premium Matter-ready</li>
+                    <li class="flex items-start gap-3 text-sm opacity-70"><span class="text-gold mt-1">▸</span> Control por voz Alexa / Google / Siri</li>
+                    <li class="flex items-start gap-3 text-sm opacity-70"><span class="text-gold mt-1">▸</span> Integración Apple Home / Google Home</li>
+                    <li class="flex items-start gap-3 text-sm opacity-70"><span class="text-gold mt-1">▸</span> Control adaptativo solar</li>
+                    <li class="flex items-start gap-3 text-sm opacity-70"><span class="text-gold mt-1">▸</span> Compatible Shelly 2.5</li>
+                    <li class="flex items-start gap-3 text-sm opacity-70"><span class="text-gold mt-1">▸</span> Garantía 3 años</li>
+                </ul>
+                <a href="https://wa.me/34624420102?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20el%20tier%20Smart%20Home%20(625%E2%82%AC)." class="btn-gold w-full">Consultar</a>
+            </div>
+        </div>
+
+        <div class="text-center mt-16 max-w-3xl mx-auto">
+            <p class="text-sm opacity-60 font-light leading-relaxed">¿Busca la gama premium? Para instalaciones <span class="text-gold">ABYS Smart Matter 1.5 nativo (499–850€)</span> o sistemas profesionales <span class="text-gold">Somfy Animeo / KNX</span>, consulte directamente con nuestro equipo técnico.</p>
+            <a href="https://wa.me/34624420102?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20instalaciones%20premium%20Matter%201.5%20o%20Somfy/KNX." class="inline-block mt-6 text-[10px] uppercase tracking-[0.4em] text-gold border-b border-gold pb-1 hover:opacity-70 transition">Contactar técnico →</a>
+        </div>
+    </div>
+</section>
+
+<!-- Ahorro -->
+<section class="section-padding border-b border-white/5">
+    <div class="container mx-auto px-6 text-center">
+        <h2 class="text-5xl md:text-7xl mb-12 italic">Su casa se <span class="text-gold not-italic font-bold">paga sola.</span></h2>
+        <div class="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+            <div class="p-10 bg-gray-custom border border-white/5">
+                <span class="text-6xl text-gold font-bold mb-4 block">30%</span>
+                <p class="uppercase tracking-widest text-xs opacity-40 mb-4">Ahorro Energético</p>
+                <p class="opacity-60 font-light">La motorización no es un lujo, es una inversión financiera en su factura eléctrica.</p>
+            </div>
+            <div class="p-10 bg-gray-custom border border-white/5">
+                <span class="text-6xl text-gold font-bold mb-4 block">Hasta 20%*</span>
+                <p class="uppercase tracking-widest text-xs opacity-40 mb-4">Deducción IRPF</p>
+                <p class="opacity-60 font-light">Le gestionamos las ayudas estatales por mejora de eficiencia en su vivienda principal.</p>
+                <p class="text-[9px] opacity-30 mt-4 italic">*Sujeto a certificado de eficiencia energética y cumplimiento del RDL 19/2021.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Calculadora -->
+<section id="calculadora" class="section-padding bg-stone-900/10">
+    <div class="container mx-auto px-6 max-w-2xl">
+        <div class="text-center mb-12">
+            <h2 class="text-5xl mb-4 italic">Presupuesto <span class="text-gold not-italic font-bold">Express</span></h2>
+            <p class="text-sm uppercase tracking-[0.3em] opacity-40">Respuesta en menos de 5 minutos</p>
+        </div>
+        <div class="bg-gray-custom p-8 md:p-12 border border-white/5 space-y-10">
+
+            <div>
+                <label class="block text-[10px] uppercase tracking-widest opacity-40 mb-6">¿Qué servicio necesita?</label>
+                <div class="grid grid-cols-3 gap-4">
+                    <button type="button" data-type="Reparación" class="type-btn p-4 border border-white/10 text-[10px] uppercase tracking-widest hover:border-gold transition">Reparar</button>
+                    <button type="button" data-type="Motorización" class="type-btn p-4 border border-white/10 text-[10px] uppercase tracking-widest hover:border-gold transition">Motorizar</button>
+                    <button type="button" data-type="Instalación" class="type-btn p-4 border border-white/10 text-[10px] uppercase tracking-widest hover:border-gold transition">Instalar</button>
+                </div>
+            </div>
+
+            <div id="tier-section">
+                <label class="block text-[10px] uppercase tracking-widest opacity-40 mb-6">Tarifa</label>
+                <div class="grid grid-cols-3 gap-4">
+                    <button type="button" data-tier="Esencial" data-price="279" class="tier-btn p-4 border border-white/10 text-[10px] uppercase tracking-widest hover:border-gold transition flex flex-col gap-1">
+                        <span>Esencial</span>
+                        <span class="text-gold font-bold">279€</span>
+                    </button>
+                    <button type="button" data-tier="Conectado" data-price="355" class="tier-btn p-4 border border-white/10 text-[10px] uppercase tracking-widest hover:border-gold transition flex flex-col gap-1">
+                        <span>Conectado</span>
+                        <span class="text-gold font-bold">355€</span>
+                    </button>
+                    <button type="button" data-tier="Smart Home" data-price="625" class="tier-btn p-4 border border-white/10 text-[10px] uppercase tracking-widest hover:border-gold transition flex flex-col gap-1">
+                        <span>Smart Home</span>
+                        <span class="text-gold font-bold">625€</span>
+                    </button>
+                </div>
+            </div>
+
+            <div>
+                <div class="text-[10px] uppercase tracking-widest opacity-40 mb-6 flex justify-between">
+                    <span>Número de ventanas</span>
+                    <span id="window-count" class="text-gold">1</span>
+                </div>
+                <input type="range" min="1" max="15" value="1" id="window-range" class="w-full h-1 bg-white/10 appearance-none cursor-pointer accent-gold">
+            </div>
+
+            <div>
+                <label class="block text-[10px] uppercase tracking-widest opacity-40 mb-6" for="city-select">Ubicación</label>
+                <select id="city-select" class="w-full bg-transparent border-b border-white/10 py-2 text-sm focus:outline-none focus:border-gold">
+                    <option value="Madrid Capital" class="bg-dark">Madrid Capital</option>
+                    <option value="Getafe" class="bg-dark">Getafe</option>
+                    <option value="Leganés" class="bg-dark">Leganés</option>
+                    <option value="Fuenlabrada" class="bg-dark">Fuenlabrada</option>
+                    <option value="Parla" class="bg-dark">Parla</option>
+                </select>
+            </div>
+
+            <div class="border-t border-white/10 pt-8">
+                <p class="text-[10px] uppercase tracking-widest opacity-40 mb-3">Estimación</p>
+                <p id="estimated-price" class="text-4xl text-gold font-bold">—</p>
+                <p id="price-note" class="text-xs opacity-40 mt-2 italic">Seleccione servicio y tarifa para ver el precio</p>
+            </div>
+
+            <button type="button" id="send-whatsapp" class="w-full bg-gold text-dark py-5 text-xs font-bold uppercase tracking-[0.3em] hover:bg-white transition">Solicitar Presupuesto por WhatsApp</button>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio -->
+<section class="section-padding">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl md:text-6xl mb-16 italic text-center">Nuestros proyectos en <span class="text-gold not-italic">Madrid</span></h2>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div>
+                <div class="group overflow-hidden bg-gray-custom aspect-[3/4]">
+                    <img src="/assets/proyectos/obra_1.jpg" alt="Integración Matter 1.5" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-700">
+                </div>
+                <p class="mt-4 text-[10px] uppercase tracking-widest opacity-40">Integración Matter 1.5</p>
+            </div>
+            <div>
+                <div class="group overflow-hidden bg-gray-custom aspect-[3/4]">
+                    <img src="/assets/proyectos/obra_2.jpg" alt="Automatización Smart Home" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-700">
+                </div>
+                <p class="mt-4 text-[10px] uppercase tracking-widest opacity-40">Automatización Smart Home</p>
+            </div>
+            <div>
+                <div class="group overflow-hidden bg-gray-custom aspect-[3/4]">
+                    <img src="/assets/proyectos/obra_3.jpg" alt="Instalación Premium Exterior" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-700">
+                </div>
+                <p class="mt-4 text-[10px] uppercase tracking-widest opacity-40">Instalación Premium Exterior</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Reviews -->
+<section class="section-padding border-t border-white/5">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl mb-16 italic text-center uppercase tracking-widest">Lo que dicen <span class="text-gold not-italic">nuestros clientes</span></h2>
+        <div class="grid md:grid-cols-3 gap-12">
+            <div class="reveal">
+                <div class="flex gap-1 text-gold mb-4">★★★★★</div>
+                <p class="text-sm italic opacity-70 mb-6">"He quedado muy satisfecho con la seriedad y profesionalidad de esta empresa. He confiado en ellos para motorizar unas persianas y han trabajado meticulosa y cuidadosamente. ¡Volveré!"</p>
+                <p class="text-[10px] uppercase tracking-widest font-bold">Sergio A. Fernández <span class="opacity-40 ml-2">Local Guide</span></p>
+            </div>
+            <div class="reveal">
+                <div class="flex gap-1 text-gold mb-4">★★★★★</div>
+                <p class="text-sm italic opacity-70 mb-6">"Presupuesto claro y transparente desde el primer momento. Buscaba la mejor solución para persiana de seguridad y ha sido un acierto. Muy recomendable."</p>
+                <p class="text-[10px] uppercase tracking-widest font-bold">José Caballero <span class="opacity-40 ml-2">Local Guide</span></p>
+            </div>
+            <div class="reveal">
+                <div class="flex gap-1 text-gold mb-4">★★★★★</div>
+                <p class="text-sm italic opacity-70 mb-6">"Muchas gracias a Víctor por su atención. El mejor precio del mercado con diferencia y una instalación impecable. Muy contenta con el resultado."</p>
+                <p class="text-[10px] uppercase tracking-widest font-bold">Silvia Lara González <span class="opacity-40 ml-2">Cliente Satisfecha</span></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Zonas -->
+<section class="section-padding bg-stone-900/30">
+    <div class="container mx-auto px-6">
+        <h3 class="text-center text-[10px] uppercase tracking-[0.5em] opacity-40 mb-12">Asistencia Técnica en Sur de Madrid</h3>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <a href="/getafe.html" class="p-6 border border-white/5 hover:border-gold transition text-center uppercase tracking-widest text-xs">Getafe</a>
+            <a href="/leganes.html" class="p-6 border border-white/5 hover:border-gold transition text-center uppercase tracking-widest text-xs">Leganés</a>
+            <a href="/fuenlabrada.html" class="p-6 border border-white/5 hover:border-gold transition text-center uppercase tracking-widest text-xs">Fuenlabrada</a>
+            <a href="/parla.html" class="p-6 border border-white/5 hover:border-gold transition text-center uppercase tracking-widest text-xs">Parla</a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-20 bg-dark border-t border-white/5 text-center">
+    <div class="container mx-auto px-6">
+        <h3 class="text-4xl md:text-6xl font-light mb-8 hover:text-gold transition"><a href="tel:+34911674242">911 67 42 42</a></h3>
+        <p class="opacity-40 uppercase tracking-widest text-[10px] mb-12">Persianas Online, S.L. (Sociedad Unipersonal) · NIF B22655724 · Avenida Juan Carlos I, 38, Getafe (Madrid), 28905</p>
+        <div class="flex flex-wrap justify-center gap-8 mb-16">
+            <a href="/aviso-legal.html" class="opacity-40 hover:opacity-100 transition text-[10px] uppercase tracking-widest">Aviso Legal</a>
+            <a href="/privacidad.html" class="opacity-40 hover:opacity-100 transition text-[10px] uppercase tracking-widest">Privacidad</a>
+            <a href="/cookies.html" class="opacity-40 hover:opacity-100 transition text-[10px] uppercase tracking-widest">Cookies</a>
+        </div>
+        <p class="text-[9px] opacity-20 tracking-widest uppercase">© 2026 Persianas Online · Engineering Boutique</p>
+    </div>
+</footer>
+
+<!-- Cookie Banner -->
+<div id="cookie-banner">
+    <div class="container mx-auto flex flex-col md:flex-row items-center gap-6 justify-between">
+        <p class="text-xs opacity-70 max-w-2xl">Usamos cookies técnicas necesarias y, con su consentimiento, cookies analíticas para mejorar nuestros servicios. Puede aceptar, rechazar o configurar su preferencia. Más información en nuestra <a href="/cookies.html" class="text-gold underline">Política de Cookies</a>.</p>
+        <div class="flex gap-3 flex-shrink-0">
+            <button type="button" id="cookie-reject" class="btn-gold text-[10px]">Solo esenciales</button>
+            <button type="button" id="cookie-accept" class="bg-gold text-dark px-6 py-3 text-[10px] font-bold uppercase tracking-widest hover:bg-white transition">Aceptar todas</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    (function() {
+        let selectedType = null;
+        let selectedTier = null;
+        let selectedTierPrice = 0;
+
+        const typeButtons = document.querySelectorAll('.type-btn');
+        const tierButtons = document.querySelectorAll('.tier-btn');
+        const tierSection = document.getElementById('tier-section');
+        const windowRange = document.getElementById('window-range');
+        const windowCount = document.getElementById('window-count');
+        const citySelect = document.getElementById('city-select');
+        const priceDisplay = document.getElementById('estimated-price');
+        const priceNote = document.getElementById('price-note');
+        const sendButton = document.getElementById('send-whatsapp');
+
+        function formatEuro(amount) {
+            return amount.toLocaleString('es-ES') + '€';
+        }
+
+        function updatePrice() {
+            const windows = parseInt(windowCount.innerText, 10);
+
+            if (selectedType === 'Reparación') {
+                priceDisplay.innerText = 'Desde 80€';
+                priceNote.innerText = 'Visita técnica + materiales según diagnóstico';
+                return;
+            }
+            if (!selectedType) {
+                priceDisplay.innerText = '—';
+                priceNote.innerText = 'Seleccione servicio y tarifa para ver el precio';
+                return;
+            }
+            if (!selectedTier) {
+                priceDisplay.innerText = '—';
+                priceNote.innerText = 'Seleccione una tarifa';
+                return;
+            }
+
+            const total = selectedTierPrice * windows;
+            priceDisplay.innerText = formatEuro(total);
+            priceNote.innerText = `${selectedTier} · ${windows} ventana${windows === 1 ? '' : 's'} · Instalación incluida`;
+        }
+
+        function setType(type) {
+            selectedType = type;
+            typeButtons.forEach(btn => btn.classList.toggle('active', btn.dataset.type === type));
+            tierSection.style.display = (type === 'Reparación') ? 'none' : 'block';
+            updatePrice();
+        }
+
+        function setTier(tier, price) {
+            selectedTier = tier;
+            selectedTierPrice = price;
+            tierButtons.forEach(btn => btn.classList.toggle('active', btn.dataset.tier === tier));
+            updatePrice();
+        }
+
+        typeButtons.forEach(btn => btn.addEventListener('click', () => setType(btn.dataset.type)));
+        tierButtons.forEach(btn => btn.addEventListener('click', () => setTier(btn.dataset.tier, parseInt(btn.dataset.price, 10))));
+        windowRange.addEventListener('input', (e) => {
+            windowCount.innerText = e.target.value;
+            updatePrice();
+        });
+
+        sendButton.addEventListener('click', () => {
+            const windows = windowCount.innerText;
+            const city = citySelect.value;
+            let text;
+
+            if (!selectedType) {
+                alert('Por favor, seleccione el servicio que necesita.');
+                return;
+            }
+            if (selectedType === 'Reparación') {
+                text = `Hola, necesito reparación de ${windows} persiana${windows === '1' ? '' : 's'} en ${city}. ¿Podrían enviarme presupuesto?`;
+            } else {
+                if (!selectedTier) {
+                    alert('Por favor, seleccione una tarifa.');
+                    return;
+                }
+                const total = selectedTierPrice * parseInt(windows, 10);
+                text = `Hola, quiero ${selectedType.toLowerCase()} ${windows} ventana${windows === '1' ? '' : 's'} en ${city}, tarifa ${selectedTier} (estimado ${formatEuro(total)}). ¿Podrían confirmarme el presupuesto?`;
+            }
+            window.open(`https://wa.me/34624420102?text=${encodeURIComponent(text)}`, '_blank');
+        });
+
+        setType('Motorización');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('active');
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // Cookie banner
+        const CONSENT_KEY = 'po_cookie_consent';
+        function getCookie(name) {
+            const m = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+            return m ? m[2] : null;
+        }
+        function setCookie(name, value, days) {
+            const expires = new Date(Date.now() + days * 864e5).toUTCString();
+            document.cookie = `${name}=${value}; expires=${expires}; path=/; SameSite=Lax`;
+        }
+        const banner = document.getElementById('cookie-banner');
+        if (!getCookie(CONSENT_KEY)) banner.classList.add('show');
+        document.getElementById('cookie-accept').addEventListener('click', () => {
+            setCookie(CONSENT_KEY, 'all', 365);
+            banner.classList.remove('show');
+        });
+        document.getElementById('cookie-reject').addEventListener('click', () => {
+            setCookie(CONSENT_KEY, 'essential', 365);
+            banner.classList.remove('show');
+        });
+    })();
+</script>
+```
+
+</body>
+</html>
