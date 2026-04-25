@@ -272,6 +272,36 @@ p, li      { font-size: 1rem; }
   ]
 }
 </script>
+<!-- Google Analytics GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6SF9ESZW2Q"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-6SF9ESZW2Q');
+
+  // Evento: clic en WhatsApp
+  document.addEventListener('click', function(e) {
+    var el = e.target.closest('a[href*="wa.me"]');
+    if (el) {
+      gtag('event', 'whatsapp_click', {
+        'event_category': 'contacto',
+        'event_label': el.href
+      });
+    }
+  });
+
+  // Evento: clic en teléfono
+  document.addEventListener('click', function(e) {
+    var el = e.target.closest('a[href^="tel:"]');
+    if (el) {
+      gtag('event', 'phone_click', {
+        'event_category': 'contacto',
+        'event_label': el.href
+      });
+    }
+  });
+</script>
 ```
 
 </head>
